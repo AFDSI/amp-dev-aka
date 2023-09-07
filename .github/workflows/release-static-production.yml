@@ -30,7 +30,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 20
 
       - uses: actions/cache@v3
         if: ${{ !env.ACT }}
@@ -43,6 +43,7 @@ jobs:
 
       - name: Running tests
         run: |
+          npx browserslist@latest --update-db
           npx gulp updateTestResources
           npx gulp lintNode
           npx gulp lintYaml
@@ -58,7 +59,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 20
 
       - uses: actions/cache@v3
         if: ${{ !env.ACT }}
@@ -91,20 +92,6 @@ jobs:
         language:
           [
             'en',
-            'de',
-            'fr',
-            'ar',
-            'es',
-            'it',
-            'id',
-            'ja',
-            'ko',
-            'pt_BR',
-            'ru',
-            'tr',
-            'zh_CN',
-            'pl',
-            'vi',
           ]
     runs-on: ubuntu-latest
     steps:
@@ -114,7 +101,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 20
 
       - uses: actions/cache@v3
         if: ${{ !env.ACT }}
@@ -174,7 +161,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 20
 
       - uses: actions/cache@v3
         if: ${{ !env.ACT }}
