@@ -41,6 +41,7 @@ async function staticDeploy() {
   for (const SITE of SITES) {
     console.log(`attempting to deploy ${SITE.DIR}`);
 
+    await sh(`npx browserslist@latest --update-db`);
     await sh(
       `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
