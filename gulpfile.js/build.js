@@ -283,6 +283,8 @@ function importComponents() {
  */
 function buildPrepare(done) {
   return gulp.series(
+    sh('npx browserslist@latest --update-db');
+
     // Build playground and boilerplate that early in the flow as they are
     // fairly quick to build and would be annoying to eventually fail downstream
     buildSamples,
