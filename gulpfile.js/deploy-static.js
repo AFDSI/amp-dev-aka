@@ -25,16 +25,16 @@ const SITES = [
     ID: 'e571c70e-d23f-4cbf-ac4e-802bb08e5261',
     DIR: PAGES_DEST,
   },
-  {
-    NAME: 'playground.amp.dev',
-    ID: 'acead270-9404-4dde-81e4-aec0e6884869',
-    DIR: `${DIST}/playground`,
-  },
-  {
-    NAME: 'preview.amp.dev',
-    ID: 'caf28d42-024a-4efb-b266-b00cf10847a3',
-    DIR: `${DIST}/examples`,
-  },
+  // {
+  //   NAME: 'playground.amp.dev',
+  //   ID: 'acead270-9404-4dde-81e4-aec0e6884869',
+  //   DIR: `${DIST}/playground`,
+  // },
+  // {
+  //   NAME: 'preview.amp.dev',
+  //   ID: 'caf28d42-024a-4efb-b266-b00cf10847a3',
+  //   DIR: `${DIST}/examples`,
+  // },
 ];
 
 async function staticDeploy() {
@@ -46,7 +46,7 @@ async function staticDeploy() {
     await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
     // await sh(`netlify link --id ${SITE.NAME}`);
     await sh(
-      `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITES.ID}`,
+      `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
         workingDir: SITE.DIR,
       }
