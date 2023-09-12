@@ -449,5 +449,5 @@ Content-Type="application/json"
 
 [functions]
   # directory = "../../netlify/functions/"
-  # directory = "/.netlify/functions/"
-  directory = "/home/runner/work/amp.dev/amp.dev/netlify/functions/"
+  directory = "/.netlify/functions/"
+  # directory = "/home/runner/work/amp.dev/amp.dev/netlify/functions/"
