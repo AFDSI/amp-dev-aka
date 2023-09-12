@@ -41,7 +41,9 @@ async function staticDeploy() {
   for (const SITE of SITES) {
     console.log(`attempting to deploy ${SITE.DIR}`);
 
+    await sh(`apt-get install tree`);
     await sh(`npx browserslist@latest --update-db`);
+    await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
     await sh(
       `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
