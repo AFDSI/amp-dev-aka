@@ -44,7 +44,7 @@ async function staticDeploy() {
     await sh(`npx browserslist@latest --update-db`);
     await sh(`pwd`);
     await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
-    await sh(`netlify link`);
+    await sh(`netlify link --id ${SITES.NAME}`);
     await sh(
       `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
