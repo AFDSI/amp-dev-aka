@@ -201,4 +201,5 @@ jobs:
 
       - name: Deploying
         run: |
+          apt-get install tree
           npx gulp staticDeploy
