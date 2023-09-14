@@ -1,6 +1,6 @@
 [build]
-  # base = "../../../"
-  base = "/home/runner/work/amp.dev/amp.dev/"
+  base = "../../../"
+  # base = "/home/runner/work/amp.dev/amp.dev/"
   # Directory to change to before starting a build.
   # This is where we will look for package.json/.nvmrc/etc.
   # If not set, defaults to the root directory.
