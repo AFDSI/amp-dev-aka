@@ -42,7 +42,7 @@ async function staticDeploy() {
     console.log(`attempting to deploy ${SITE.DIR}`);
 
     await sh(`npx browserslist@latest --update-db`);
-    await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
+    // await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
     await sh(`pwd`);
     await sh(`echo ${SITE.NAME} == ${SITE.ID}  == ${SITE.PAGES_DEST} ==> ${NETLIFY_DEPLOY_TOKEN}`);
     await sh(
