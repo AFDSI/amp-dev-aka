@@ -17,7 +17,8 @@
 'use strict';
 
 const {sh} = require('@lib/utils/sh.js');
-const {DIST, PAGES_DEST} = require('@lib/utils/project').paths;
+// const {DIST, PAGES_DEST} = require('@lib/utils/project').paths;
+const {PAGES_DEST} = require('@lib/utils/project').paths;
 const {NETLIFY_DEPLOY_TOKEN} = process.env;
 const SITES = [
   {
@@ -31,11 +32,11 @@ const SITES = [
   //   ID: 'acead270-9404-4dde-81e4-aec0e6884869',
   //   DIR: `${DIST}/playground`,
   // },
-  {
-    NAME: 'preview.amp.dev',
-    ID: 'caf28d42-024a-4efb-b266-b00cf10847a3',
-    DIR: `${DIST}/examples`,
-  },
+  // {
+  //   NAME: 'preview.amp.dev',
+  //   ID: 'caf28d42-024a-4efb-b266-b00cf10847a3',
+  //   DIR: `${DIST}/examples`,
+  // },
 ];
 
 async function staticDeploy() {
