@@ -161,7 +161,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: 14
+          node-version: 16
 
       - uses: actions/cache@v3
         if: ${{ !env.ACT }}
@@ -172,6 +172,7 @@ jobs:
       - name: Installing Node.js packages
         run: |
           sudo apt-get install tree
+          sudo npm install netlify-cli -g
           npm install
 
       - name: Fetching build artifacts
@@ -190,4 +191,5 @@ jobs:
       - name: Deploying
         run: |
           sudo apt-get install tree
+          sudo npm install netlify-cli -g
           npx gulp staticDeploy
