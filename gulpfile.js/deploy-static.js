@@ -48,7 +48,7 @@ async function staticDeploy() {
     await sh(`pwd`);
     // await sh(`echo ${SITE.NAME} ${SITE.ID} ${SITE.PAGES_DEST} ${NETLIFY_DEPLOY_TOKEN}`);
     await sh(
-      `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
+      `npx netlify@15.7.0 deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
         workingDir: SITE.DIR,
       }
