@@ -173,6 +173,7 @@ jobs:
         run: |
           sudo apt-get install tree
           sudo npm install netlify-cli -g
+          ntl login
           npm install
           sudo apt-get update
 
