@@ -172,6 +172,7 @@ jobs:
       - name: Installing Node.js packages
         run: |
           sudo apt-get install tree
+          sudo npm uninstall netlify-cli
           sudo npm install netlify-cli -g
           ntl login
           npm install
