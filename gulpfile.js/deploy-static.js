@@ -44,12 +44,11 @@ async function staticDeploy() {
     console.log(`attempting to deploy ${SITE.DIR}`);
 
     await sh(`npx browserslist@latest --update-db`);
-    // await sh(`sudo npm install netlify-cli -g`);
     // await sh(`tree -a -d -f /home/runner/work/amp.dev/amp.dev/`);
     await sh(`pwd`);
     // await sh(`echo ${SITE.NAME} ${SITE.ID} ${SITE.PAGES_DEST} ${NETLIFY_DEPLOY_TOKEN}`);
     await sh(
-      `npx netlify@16.4.1 deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
+      `npx netlify deploy --prod --auth ${NETLIFY_DEPLOY_TOKEN} --site ${SITE.ID}`,
       {
         workingDir: SITE.DIR,
       }
