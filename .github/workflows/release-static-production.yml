@@ -190,6 +190,4 @@ jobs:
 
       - name: Deploying
         run: |
-          sudo apt-get install tree
-          sudo npm install netlify-cli -g
           npx gulp staticDeploy
