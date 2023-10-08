@@ -17,7 +17,8 @@
 'use strict';
 
 const {sh} = require('@lib/utils/sh.js');
-const {DIST, PAGES_DEST} = require('@lib/utils/project').paths;
+// const {DIST, PAGES_DEST} = require('@lib/utils/project').paths;
+const {PAGES_DEST} = require('@lib/utils/project').paths;
 const {NETLIFY_DEPLOY_TOKEN} = process.env;
 const SITES = [
   {
