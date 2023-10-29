@@ -45,15 +45,16 @@ const {thumborImageIndex} = require('./thumbor.js');
 const CleanCSS = require('clean-css');
 const {PIXI_CLOUD_ROOT} = require('@lib/utils/project').paths;
 const {copyFile} = require('fs/promises');
-const nunjucks = require('nunjucks');
-const {importBlog} = require('@lib/templates/ImportBlogFilter.js');
-const {
-  importYouTubeChannel,
-} = require('@lib/templates/ImportYouTubeChannel.js');
-const {survey} = require('@lib/templates/SurveyFilter.js');
-const {
-  SupportedFormatsExtension,
-} = require('@lib/templates/SupportedFormatsExtension.js');
+// ANANT - COMMENTED TO AVOID ERRORS W.R.T. PLAYGROUND, SAMPLES & EXAMPLES
+// const nunjucks = require('nunjucks');
+// const {importBlog} = require('@lib/templates/ImportBlogFilter.js');
+// const {
+//   importYouTubeChannel,
+// } = require('@lib/templates/ImportYouTubeChannel.js');
+// const {survey} = require('@lib/templates/SurveyFilter.js');
+// const {
+//   SupportedFormatsExtension,
+// } = require('@lib/templates/SupportedFormatsExtension.js');
 const {optimize} = require('@lib/utils/ampOptimizer.js');
 const toml = require('@iarna/toml');
 
