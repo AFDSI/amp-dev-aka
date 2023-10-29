@@ -28,7 +28,8 @@ const path = require('path');
 const through = require('through2');
 const archiver = require('archiver');
 const yaml = require('js-yaml');
-const {samplesBuilder} = require('@lib/build/samplesBuilder');
+// ANANT - STOP BUILDING SAMPLES
+// const {samplesBuilder} = require('@lib/build/samplesBuilder');
 const {project} = require('@lib/utils');
 const git = require('@lib/utils/git');
 const ComponentReferenceImporter = require('@lib/pipeline/componentReferenceImporter');
@@ -513,29 +514,30 @@ function buildPages(done) {
  * creates a new nunjucks environment for rendering
  *
  */
-function nunjucksEnv() {
-  const env = new nunjucks.Environment(null, {
-    tags: {
-      blockStart: '[%',
-      blockEnd: '%]',
-      variableStart: '[=',
-      variableEnd: '=]',
-      commentStart: '[[[[#',
-      commentEnd: '#]]]]',
-    },
-  });
+// ANANT STOP BUILDING EXAMPLES
+// function nunjucksEnv() {
+//   const env = new nunjucks.Environment(null, {
+//     tags: {
+//       blockStart: '[%',
+//       blockEnd: '%]',
+//       variableStart: '[=',
+//       variableEnd: '=]',
+//       commentStart: '[[[[#',
+//       commentEnd: '#]]]]',
+//     },
+//   });
 
-  env.addExtension(
-    'SupportedFormatsExtension',
-    new SupportedFormatsExtension()
-  );
-  env.addFilter('importBlog', importBlog, true);
+//   env.addExtension(
+//     'SupportedFormatsExtension',
+//     new SupportedFormatsExtension()
+//   );
+//   env.addFilter('importBlog', importBlog, true);
 
-  env.addFilter('importYouTubeChannel', importYouTubeChannel, true);
-  env.addFilter('survey', survey, true);
+//   env.addFilter('importYouTubeChannel', importYouTubeChannel, true);
+//   env.addFilter('survey', survey, true);
 
-  return env;
-}
+//   return env;
+// }
 
 function optimizeFiles(cb) {
   return gulp
@@ -556,16 +558,17 @@ function optimizeFiles(cb) {
     .on('end', cb);
 }
 
-function newPost(text, img, id) {
-  return {
-    id: id,
-    text: text,
-    img: '/static/samples/img/' + img,
-    timestamp: Number(new Date()),
-  };
-}
+// ANANT - STOP BUILDING SAMPLES
+// function newPost(text, img, id) {
+//   return {
+//     id: id,
+//     text: text,
+//     img: '/static/samples/img/' + img,
+//     timestamp: Number(new Date()),
+//   };
+// }
 
-// ANANT STOP BUILDING EXAMPLES
+// ANANT - STOP BUILDING EXAMPLES
 // async function renderExamples(done) {
 //   const logger = require('@lib/utils/log')('Static File Generator');
 //   const env = nunjucksEnv();
