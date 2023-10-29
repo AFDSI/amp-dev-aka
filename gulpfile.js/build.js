@@ -166,27 +166,28 @@ function buildFrontend(done) {
  * Builds the playground
  * @return {Promise}
  */
-async function buildPlayground() {
-  await sh('mkdir -p playground/dist');
-  await sh('npm run build:playground');
+// ANANT - STOP BUILDING PLAYGROUND
+// async function buildPlayground() {
+//   await sh('mkdir -p playground/dist');
+//   await sh('npm run build:playground');
 
-  // ANANT - STOP BUILDING EXAMPLES
-  // await gulp
-  //   .src(project.absolute('netlify/configs/preview.amp.dev/netlify.toml'))
-  //   .pipe(gulp.dest(`${project.paths.DIST}/examples`));
+//   // ANANT - STOP BUILDING EXAMPLES
+//   // await gulp
+//   //   .src(project.absolute('netlify/configs/preview.amp.dev/netlify.toml'))
+//   //   .pipe(gulp.dest(`${project.paths.DIST}/examples`));
 
-  await gulp
-    .src([project.absolute('pages/static/**/*')])
-    .pipe(gulp.dest(`${project.paths.DIST}/playground/static`));
+//   await gulp
+//     .src([project.absolute('pages/static/**/*')])
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground/static`));
 
-  await gulp
-    .src(project.absolute('playground/dist/**/*'))
-    .pipe(gulp.dest(`${project.paths.DIST}/playground`));
+//   await gulp
+//     .src(project.absolute('playground/dist/**/*'))
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground`));
 
-  return await gulp
-    .src(project.absolute('playground/netlify.toml'))
-    .pipe(gulp.dest(`${project.paths.DIST}/playground`));
-}
+//   return await gulp
+//     .src(project.absolute('playground/netlify.toml'))
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground`));
+// }
 
 /**
  * Builds Pixi
@@ -222,9 +223,10 @@ function buildBoilerplate() {
  *
  * @return {Promise}
  */
-function buildSamples() {
-  return samplesBuilder.build();
-}
+// ANANT _ STOP BUILDING SAMPLES
+// function buildSamples() {
+//   return samplesBuilder.build();
+// }
 
 /**
  * Zips templates for download.
@@ -502,7 +504,6 @@ function buildPages(done) {
       //   `tar cfj ${archive} ./dist/pages ./dist/inline-examples ` +
       //     './dist/static/files/search-promoted-pages'
       // );
-
     },
     whoAmI
   )(done);
@@ -565,77 +566,77 @@ function newPost(text, img, id) {
 }
 
 // ANANT STOP BUILDING EXAMPLES
-async function renderExamples(done) {
-  const logger = require('@lib/utils/log')('Static File Generator');
-  const env = nunjucksEnv();
-  const blogItems = [
-    newPost('A green landscape with trees.', 'landscape_green_1280x853.jpg', 1),
-    newPost(
-      'Mountains reflecting on a lake.',
-      'landscape_mountains_1280x657.jpg',
-      2
-    ),
-    newPost(
-      'A road leading to a lake with mountains on the back.',
-      'landscape_lake_1280x857.jpg',
-      3
-    ),
-    newPost(
-      'Forested hills with a grey sky in the background.',
-      'landscape_trees_1280x960.jpg',
-      4
-    ),
-    newPost(
-      'Scattered houses in a mountain village.',
-      'landscape_village_1280x853.jpg',
-      5
-    ),
-    newPost('A deep canyon.', 'landscape_canyon_1280x1700.jpg', 6),
-    newPost(
-      'A desert with mountains in the background.',
-      'landscape_desert_1280x853.jpg',
-      7
-    ),
-    newPost('Colorful houses on a street.', 'landscape_houses_1280x803.jpg', 8),
-    newPost('Blue sea surrounding a cave.', 'landscape_sea_1280x848.jpg', 9),
-    newPost(
-      'A ship sailing the sea at sunset.',
-      'landscape_ship_1280x853.jpg',
-      10
-    ),
-  ];
+// async function renderExamples(done) {
+//   const logger = require('@lib/utils/log')('Static File Generator');
+//   const env = nunjucksEnv();
+//   const blogItems = [
+//     newPost('A green landscape with trees.', 'landscape_green_1280x853.jpg', 1),
+//     newPost(
+//       'Mountains reflecting on a lake.',
+//       'landscape_mountains_1280x657.jpg',
+//       2
+//     ),
+//     newPost(
+//       'A road leading to a lake with mountains on the back.',
+//       'landscape_lake_1280x857.jpg',
+//       3
+//     ),
+//     newPost(
+//       'Forested hills with a grey sky in the background.',
+//       'landscape_trees_1280x960.jpg',
+//       4
+//     ),
+//     newPost(
+//       'Scattered houses in a mountain village.',
+//       'landscape_village_1280x853.jpg',
+//       5
+//     ),
+//     newPost('A deep canyon.', 'landscape_canyon_1280x1700.jpg', 6),
+//     newPost(
+//       'A desert with mountains in the background.',
+//       'landscape_desert_1280x853.jpg',
+//       7
+//     ),
+//     newPost('Colorful houses on a street.', 'landscape_houses_1280x803.jpg', 8),
+//     newPost('Blue sea surrounding a cave.', 'landscape_sea_1280x848.jpg', 9),
+//     newPost(
+//       'A ship sailing the sea at sunset.',
+//       'landscape_ship_1280x853.jpg',
+//       10
+//     ),
+//   ];
 
-  const configObj = {
-    time: new Date().toLocaleTimeString(),
-    timestamp: Number(new Date()),
-    // send a random list of blog items to make it also work on the cache
-    blogItems: blogItems.filter(() =>
-      Math.floor(Math.random() * Math.floor(2))
-    ),
-  };
+//   const configObj = {
+//     time: new Date().toLocaleTimeString(),
+//     timestamp: Number(new Date()),
+//     // send a random list of blog items to make it also work on the cache
+//     blogItems: blogItems.filter(() =>
+//       Math.floor(Math.random() * Math.floor(2))
+//     ),
+//   };
 
-  return gulp
-    .src(`${project.paths.DIST}/examples/sources/**/*.html`)
-    .pipe(
-      through.obj(async (file, enc, callback) => {
-        const srcHTML = file.contents.toString();
+//   return gulp
+//     .src(`${project.paths.DIST}/examples/sources/**/*.html`)
+//     .pipe(
+//       through.obj(async (file, enc, callback) => {
+//         const srcHTML = file.contents.toString();
 
-        env.renderString(srcHTML, configObj, (err, result) => {
-          if (err) {
-            logger.error(`Error rendering ${file.path}`);
-            return callback(err);
-          }
+//         env.renderString(srcHTML, configObj, (err, result) => {
+//           if (err) {
+//             logger.error(`Error rendering ${file.path}`);
+//             return callback(err);
+//           }
 
-          file.contents = Buffer.from(result);
-          callback(null, file);
-        });
-      })
-    )
-    .pipe(gulp.dest((f) => f.base))
-    .on('end', () => {
-      done();
-    });
-}
+//           file.contents = Buffer.from(result);
+//           callback(null, file);
+//         });
+//       })
+//     )
+//     .pipe(gulp.dest((f) => f.base))
+//     .on('end', () => {
+//       done();
+//     });
+// }
 
 /**
  * Removes unnecessary whitespace from rendered pages and minifies their CSS
@@ -790,11 +791,13 @@ exports.icons = icons;
 exports.templates = templates;
 exports.importAll = importAll;
 exports.importComponents = importComponents;
-exports.buildPlayground = buildPlayground;
+// ANANT - STOP BUILDING PLAYGROUND
+// exports.buildPlayground = buildPlayground;
 exports.buildPixi = buildPixi;
 exports.buildBoilerplate = buildBoilerplate;
 exports.buildFrontend = buildFrontend;
-exports.buildSamples = buildSamples;
+// ANANT - STOP BUILDING SAMPLES
+// exports.buildSamples = buildSamples;
 exports.zipTemplates = zipTemplates;
 exports.buildPages = buildPages;
 exports.buildPrepare = buildPrepare;
