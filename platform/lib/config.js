@@ -35,7 +35,7 @@ const ENV_LOCAL = 'local';
 const DEFAULT_LOCALE = 'en';
 
 const AVAILABLE_LOCALES = [
-  'en',
+  'en'
 ];
 
 class Config {
