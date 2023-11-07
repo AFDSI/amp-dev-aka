@@ -91,6 +91,7 @@ jobs:
       matrix:
         language:
           [
+            'en',
             'es',
           ]
     runs-on: ubuntu-latest
