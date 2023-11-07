@@ -92,7 +92,6 @@ jobs:
         language:
           [
             'en',
-            'es',
           ]
     runs-on: ubuntu-latest
     steps:
