@@ -1,11 +1,11 @@
 ---
 name: 'Release: Static Production'
 
-# on:
-#   workflow_dispatch:
-#   push:
-#     branches:
-#       - leancode
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - leancode
 
 jobs:
   queue:
