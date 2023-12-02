@@ -410,6 +410,14 @@ function buildPages(done) {
       );
 
       await gulp
+        .src([`${project.paths.TEMPLATES}/**/*`])
+        .pipe(
+          gulp.dest(
+            `${project.paths.PAGES_DEST}/documentation/templates/preview/`
+          )
+        );
+
+      await gulp
         .src([project.absolute('pages/static/**/*')])
         .pipe(gulp.dest(`${project.paths.PAGES_DEST}/static`));
 
@@ -521,10 +529,15 @@ function nunjucksEnv() {
 
 function optimizeFiles(cb) {
   return gulp
-    .src(`${project.paths.PAGES_DEST}/**/*.html`)
+    .src([
+      `${project.paths.PAGES_DEST}/**/*.html`,
+      `!${project.paths.PAGES_DEST}/static/samples/**/*.html`,
+    ])
     .pipe(
       through.obj((file, encoding, callback) => {
         const unoptimizedFile = file.contents.toString();
+
+        console.log(`running optimize on ${file.path}...`);
 
         optimize({query: ''}, unoptimizedFile, {}, file.path).then(
           (optimizedFile) => {
