@@ -1,0 +1,9 @@
+$title@: stripes
+$path: /stripes/{base}.html
+$view: /views/default.j2
+$localization:
+  path: /{locale}/stripes/{base}.html
+$order: 10
+
+flyout:
+    - /content/amp-dev/stripes/websites.html
