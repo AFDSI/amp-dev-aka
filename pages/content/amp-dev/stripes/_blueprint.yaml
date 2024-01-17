@@ -1,8 +1,8 @@
-$title@: Two
-$path: /2/{base}.html
+$title@: Stripe
+$path: /stripes/{base}.html
 $view: /views/default.j2
 $localization:
-  path: /{locale}/2/{base}.html
+  path: /{locale}/stripes/{base}.html
 
 flyout:
-    - /content/amp-dev/stripes/2/index.html
+    - /content/amp-dev/stripes/index.html
