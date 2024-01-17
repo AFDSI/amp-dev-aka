@@ -1,1 +1,8 @@
+$title@: One
+$path: /1/{base}.html
+$view: /views/default.j2
+$localization:
+  path: /{locale}/1/{base}.html
 
+flyout:
+    - /content/amp-dev/stripes/1/index.html
