@@ -1,6 +1,9 @@
-$title@: stripes
+$title@: Stripe
 $path: /stripes/{base}.html
 $view: /views/default.j2
 $localization:
   path: /{locale}/stripes/{base}.html
 $order: 6
+
+flyout:
+    - /content/amp-dev/stripes/index.html
