@@ -7,3 +7,5 @@ $order: 6
 
 flyout:
     - /content/amp-dev/stripes/index.html
+    - /content/amp-dev/stripes/1/index.html
+    - /content/amp-dev/stripes/2/index.html
