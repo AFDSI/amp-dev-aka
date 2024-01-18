@@ -1,6 +1,6 @@
 $title: Develop
 $path: /romeo/2/{base}.html
-$view: /views/2021/base.html
+$view: /views/default.j2
 $localization:
   path: /{locale}/romeo/2/{base}.html
 $order: 1
