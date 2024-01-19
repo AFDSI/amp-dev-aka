@@ -3,4 +3,4 @@ $path: /romeo/4/{base}.html
 $view: /views/default.j2
 $localization:
   path: /{locale}/romeo/4/{base}.html
-$order: 1
+$order: 4
