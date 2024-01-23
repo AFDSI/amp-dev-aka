@@ -1,6 +1,0 @@
-$title: Tooling
-$view: /views/default.j2
-$path: /4/{base}.html
-$localization:
-  path: /{locale}/4/{base}.html
-$order: 4
