@@ -1,6 +1,6 @@
+$title@: Lunch
 $path: /romeo/{base}.html
 $view: /views/default.j2
-$title@: Lunch
 $localization:
   path: /{locale}/romeo/{base}.html
 $order: 6
