@@ -2,5 +2,10 @@ $title: Tooling
 $path: /4/{base}.html
 $view: /views/default.j2
 $localization:
+<<<<<<< HEAD
   path: /{locale}/4/{base}.html
 $order: 1
+=======
+  path: /{locale}/romeo/4/{base}.html
+$order: 4
+>>>>>>> 9d1a376b73f3c60eb9d67d33cf1a53885d64b6ac

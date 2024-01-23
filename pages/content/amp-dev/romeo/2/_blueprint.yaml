@@ -2,5 +2,10 @@ $title: Develop
 $path: /2/{base}.html
 $view: /views/default.j2
 $localization:
+<<<<<<< HEAD
   path: /{locale}/2/{base}.html
 $order: 1
+=======
+  path: /{locale}/romeo/2/{base}.html
+$order: 2
+>>>>>>> 9d1a376b73f3c60eb9d67d33cf1a53885d64b6ac

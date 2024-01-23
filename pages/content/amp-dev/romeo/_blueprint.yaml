@@ -1,4 +1,5 @@
 $path: /romeo/{base}.html
+# $view: /views/2021/base.html
 $view: /views/default.j2
 $title@: Lunch
 $localization:
@@ -7,7 +8,7 @@ $order: 6
 
 flyout:
     - /content/amp-dev/romeo/index.html
-    - /content/amp-dev/romeo/1/index.html
-    - /content/amp-dev/romeo/2/index.html
-    - /content/amp-dev/romeo/3/index.html
-    - /content/amp-dev/romeo/4/index.html
+#    - /content/amp-dev/romeo/1/index.html
+#    - /content/amp-dev/romeo/2/index.html
+#    - /content/amp-dev/romeo/3/index.html
+#    - /content/amp-dev/romeo/4/index.html
