@@ -1,11 +1,7 @@
 $title: Roadmap
+$view: /views/2021/base.html
+# $view: /views/default.j2
 $path: /3/{base}.html
-$view: /views/default.j2
 $localization:
-<<<<<<< HEAD
   path: /{locale}/3/{base}.html
-$order: 1
-=======
-  path: /{locale}/romeo/3/{base}.html
 $order: 3
->>>>>>> 9d1a376b73f3c60eb9d67d33cf1a53885d64b6ac
