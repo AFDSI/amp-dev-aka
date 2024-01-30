@@ -817,4 +817,6 @@ exports.build = gulp.series(
   gulp.parallel(collectStatics, persistBuildInfo)
 );
 
-exports.buildForGrowTests = gulp.series(buildBoilerplate, buildPages);
+// removed JG 24-01-30
+//exports.buildForGrowTests = gulp.series(buildBoilerplate, buildPages);
+exports.buildForGrowTests = gulp.series(buildPages);
