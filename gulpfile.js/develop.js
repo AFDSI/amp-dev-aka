@@ -28,8 +28,9 @@ const {PAGES_SRC} = require('@lib/utils/project').paths;
 
 function bootstrap(done) {
   gulp.parallel(
-    build.buildBoilerplate,
-    build.buildPlayground,
+// deprecate JG 24-01-30
+//    build.buildBoilerplate,
+//    build.buildPlayground,
     build.importAll,
     samplesBuilder.build.bind(samplesBuilder)
   )(done);
