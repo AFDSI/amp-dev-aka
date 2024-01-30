@@ -1,0 +1,82 @@
+---
+$title: The latest news
+$view: /views/2021/base.html
+$path: /4/index.html
+$localization:
+  path: /{locale}/4/{base}.html
+
+benefits: !g.yaml /shared/data/benefits-new.yaml
+
+flyout:
+  description: Begin building
+  icon: amp-email
+---
+{% do doc.styles.addCssFile('css/components/templates/roadmap.css') %}
+
+<main class="ap--main ap-t-roadmap">
+  <section class="ap--stage ap--container-fluid">
+    {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
+    <div class="ap-o-stage">
+      <div class="ap--container-fluid">
+        <div class="ap-o-stage-content">
+          <h1 class="ap-o-stage-content-headline">{{ _('The latest news') }}</h1>
+        </div>
+        <div class="ap-o-stage-image">
+          {% do doc.icons.useIcon('icons/roadmap-header.svg') %}
+          <svg style="height: 80%; width: 100%;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#roadmap-header"></use></svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="ap-cards">
+    <div class="ap-cards-grid" role="list">
+      {% for card in doc.cards %}
+      <div class="ap-cards-item" role="listitem">
+        <svg class="ap-cards-item-icon" width="30" height="30">
+          <use
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            xlink:href="/static/frontend/sprite.svg#{{ card.icon }}"
+          ></use>
+        </svg>
+
+        <h3>{{ card.headline }}</h3>
+        <p>{{ card.text }}</p>
+      </div>
+      {% endfor %}
+    </div>
+
+    <amp-base-carousel
+      id="cards-carousel"
+      class="ap-cards-carousel"
+      role="list"
+      layout="fixed-height"
+      height="350"
+      controls="never"
+      on="slideChange:cards-carousel-pagination.toggle(index=event.index, value=true)"
+    >
+      {% for card in doc.cards %}
+      <div class="ap-cards-item-wrapper">
+        <div class="ap-cards-item" role="listitem">
+          <svg class="ap-cards-item-icon" width="30" height="30">
+            <use
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              xlink:href="/static/frontend/sprite.svg#{{ card.icon }}"
+            ></use>
+          </svg>
+
+          <h3>{{ card.headline }}</h3>
+          <p>{{ card.text }}</p>
+        </div>
+      </div>
+      {% endfor %}
+    </amp-base-carousel>
+    <amp-selector class="ap-cards-carousel-pagination" id="cards-carousel-pagination" layout="container" on="select: cards-carousel.goToSlide(index=event.targetOption)">
+      {% for card in doc.cards %}
+        <div class="ap-cards-carousel-pagination-item" option="{{ loop.index0 }}" {% if loop.index0==0 %}selected{% endif
+          %}></div>
+      {% endfor %}
+    </amp-selector>
+  </section>
+
+</main>
