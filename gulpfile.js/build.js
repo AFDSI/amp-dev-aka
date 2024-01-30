@@ -188,32 +188,29 @@ function buildFrontend(done) {
  * Builds Pixi
  * @return {Promise}
  */
-// removed JG 24-01-30
-// async function buildPixi() {
-//   await sh('mkdir -p pixi/dist');
-//   return sh('npm run build:pixi');
-// }
+async function buildPixi() {
+  await sh('mkdir -p pixi/dist');
+  return sh('npm run build:pixi');
+}
 
 /**
  * Builds the pixi cloud functions project
  */
-// removed JG 24-01-30
-// function buildPixiFunctions() {
-//   return sh('npm install', {
-//     workingDir: PIXI_CLOUD_ROOT,
-//   });
-// }
+function buildPixiFunctions() {
+  return sh('npm install', {
+    workingDir: PIXI_CLOUD_ROOT,
+  });
+}
 
 /**
  * Builds the boilerplate generator
  * @return {Promise}
  */
-// removed JG 24-01-30
-// function buildBoilerplate() {
-//   return sh('node build.js', {
-//     workingDir: project.absolute('boilerplate'),
-//   });
-// }
+function buildBoilerplate() {
+  return sh('node build.js', {
+    workingDir: project.absolute('boilerplate'),
+  });
+}
 
 /**
  * Builds documentation pages, preview pages and source files by parsing
@@ -293,8 +290,8 @@ function buildPrepare(done) {
     gulp.parallel(
 // removed JG 24-01-30
       // buildPlayground,
-      // buildBoilerplate,
-      // buildPixi,
+      buildBoilerplate,
+      buildPixi,
       buildFrontend21,
       importAll,
       zipTemplates
@@ -309,10 +306,10 @@ function buildPrepare(done) {
         './pages/content/',
         './pages/shared/',
         './dist/',
+        './boilerplate/lib/',
+        './boilerplate/dist/',
 // removed JG 24-01-30
-//         './boilerplate/lib/',
-//         './boilerplate/dist/',
-//         './playground/dist/',
+//        './playground/dist/',
         './frontend21/dist/',
         './.cache/',
         './examples/static/samples/samples.json',
@@ -791,8 +788,8 @@ exports.importAll = importAll;
 exports.importComponents = importComponents;
 // removed JG 24-01-30
 // exports.buildPlayground = buildPlayground;
-// exports.buildPixi = buildPixi;
-// exports.buildBoilerplate = buildBoilerplate;
+exports.buildPixi = buildPixi;
+exports.buildBoilerplate = buildBoilerplate;
 exports.buildFrontend = buildFrontend;
 exports.buildSamples = buildSamples;
 exports.zipTemplates = zipTemplates;
@@ -803,8 +800,7 @@ exports.staticify = staticify;
 exports.unpackArtifacts = unpackArtifacts;
 exports.collectStatics = collectStatics;
 exports.whoAmI = whoAmI;
-// removed JG 24-01-30
-// exports.buildPixiFunctions = buildPixiFunctions;
+exports.buildPixiFunctions = buildPixiFunctions;
 exports.buildFinalize = gulp.series(
   gulp.parallel(collectStatics, persistBuildInfo),
   thumborImageIndex
@@ -817,6 +813,4 @@ exports.build = gulp.series(
   gulp.parallel(collectStatics, persistBuildInfo)
 );
 
-// removed JG 24-01-30
-//exports.buildForGrowTests = gulp.series(buildBoilerplate, buildPages);
-exports.buildForGrowTests = gulp.series(buildPages);
+exports.buildForGrowTests = gulp.series(buildBoilerplate, buildPages);
