@@ -27,8 +27,7 @@ const subdomain = require('./middleware/subdomain.js');
 const webSocketServer = require('@examples/socket-server/socket-server');
 
 const routers = {
-// deprecated JG 24-01-30
-//  boilerplate: require('../../boilerplate/backend/'),
+  boilerplate: require('../../boilerplate/backend/'),
   cspReport: require('@lib/routers/cspReport.js'),
   example: {
     api: require('@examples'),
@@ -46,10 +45,8 @@ const routers = {
   log: require('@lib/routers/runtimeLog.js'),
   notFound: require('@lib/routers/notFound.js'),
   // packager: require('@lib/routers/packager.js'),
-// deprecated JG 24-01-30
-//  pixi: require('../../pixi/backend/'),
-// deprecated JG 24-01-30
-//  playground: require('../../playground/backend/'),
+  pixi: require('../../pixi/backend/'),
+  playground: require('../../playground/backend/'),
   search: require('@lib/routers/search.js'),
   static: require('@lib/routers/static.js'),
   survey: require('@lib/routers/surveyComponent.js'),
@@ -180,12 +177,10 @@ class Platform {
     this.server.use(routers.whoAmI);
     this.server.use(routers.healthCheck);
     this.server.use(routers.example.api);
-// deprecated JG 24-01-30
-//    this.server.use(routers.pixi);
+    this.server.use(routers.pixi);
     this.server.use(routers.survey);
     this.server.use(routers.search);
-// deprecated JG 24-01-30
-//    this.server.use(routers.boilerplate);
+    this.server.use(routers.boilerplate);
     this.server.use(routers.static);
     this.server.use(routers.templates);
     // XMLs rendered by Grow as well as all pages located under /shared
