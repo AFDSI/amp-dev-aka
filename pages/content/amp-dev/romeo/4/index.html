@@ -5,7 +5,7 @@ $path: /4/index.html
 $localization:
   path: /{locale}/4/{base}.html
 
-benefits: !g.yaml /shared/data/benefits-new.yaml
+benefits: !g.yaml /shared/data/cards.yaml
 
 flyout:
   description: Begin building
@@ -39,9 +39,8 @@ flyout:
             xlink:href="/static/frontend/sprite.svg#{{ card.icon }}"
           ></use>
         </svg>
-
-        <h3>{{ card.headline }}</h3>
-        <p>{{ card.text }}</p>
+        <h3>{{ _(card.headline) }}</h3>
+        <p>{{ _(card.text) }}</p>
       </div>
       {% endfor %}
     </div>
