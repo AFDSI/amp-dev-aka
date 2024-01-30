@@ -146,10 +146,9 @@ class Platform {
   }
 
   async _configureSubdomains() {
-// deprecated JG 24-01-30
-//    this.server.use(
-//      await subdomain.map(config.hosts.playground, routers.playground)
-//    );
+    this.server.use(
+      await subdomain.map(config.hosts.playground, routers.playground)
+    );
     this.server.use(await subdomain.map(config.hosts.go, routers.go));
     this.server.use(await subdomain.map(config.hosts.log, routers.log));
     this.server.use(
