@@ -73,7 +73,7 @@ function clean() {
       project.paths.DIST,
       project.paths.BUILD,
 
-      project.absolute('boilerplate/dist'),
+//       project.absolute('boilerplate/dist'),
 
       project.paths.CSS,
       project.absolute('pages/extensions/**/*.pyc'),
@@ -96,7 +96,7 @@ function clean() {
       project.paths.STATICS_DEST,
       project.absolute('platform/static'),
 
-      project.absolute('playground/dist'),
+//       project.absolute('playground/dist'),
     ],
     {'force': true}
   );
@@ -162,54 +162,58 @@ function buildFrontend(done) {
  * Builds the playground
  * @return {Promise}
  */
-async function buildPlayground() {
-  await sh('mkdir -p playground/dist');
-  await sh('npm run build:playground');
-
-  await gulp
-    .src(project.absolute('netlify/configs/preview.amp.dev/netlify.toml'))
-    .pipe(gulp.dest(`${project.paths.DIST}/examples`));
-
-  await gulp
-    .src([project.absolute('pages/static/**/*')])
-    .pipe(gulp.dest(`${project.paths.DIST}/playground/static`));
-
-  await gulp
-    .src(project.absolute('playground/dist/**/*'))
-    .pipe(gulp.dest(`${project.paths.DIST}/playground`));
-
-  return await gulp
-    .src(project.absolute('playground/netlify.toml'))
-    .pipe(gulp.dest(`${project.paths.DIST}/playground`));
-}
+// removed JG 24-01-30
+// async function buildPlayground() {
+//   await sh('mkdir -p playground/dist');
+//   await sh('npm run build:playground');
+// 
+//   await gulp
+//     .src(project.absolute('netlify/configs/preview.amp.dev/netlify.toml'))
+//     .pipe(gulp.dest(`${project.paths.DIST}/examples`));
+// 
+//   await gulp
+//     .src([project.absolute('pages/static/**/*')])
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground/static`));
+// 
+//   await gulp
+//     .src(project.absolute('playground/dist/**/*'))
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground`));
+// 
+//   return await gulp
+//     .src(project.absolute('playground/netlify.toml'))
+//     .pipe(gulp.dest(`${project.paths.DIST}/playground`));
+// }
 
 /**
  * Builds Pixi
  * @return {Promise}
  */
-async function buildPixi() {
-  await sh('mkdir -p pixi/dist');
-  return sh('npm run build:pixi');
-}
+// removed JG 24-01-30
+// async function buildPixi() {
+//   await sh('mkdir -p pixi/dist');
+//   return sh('npm run build:pixi');
+// }
 
 /**
  * Builds the pixi cloud functions project
  */
-function buildPixiFunctions() {
-  return sh('npm install', {
-    workingDir: PIXI_CLOUD_ROOT,
-  });
-}
+// removed JG 24-01-30
+// function buildPixiFunctions() {
+//   return sh('npm install', {
+//     workingDir: PIXI_CLOUD_ROOT,
+//   });
+// }
 
 /**
  * Builds the boilerplate generator
  * @return {Promise}
  */
-function buildBoilerplate() {
-  return sh('node build.js', {
-    workingDir: project.absolute('boilerplate'),
-  });
-}
+// removed JG 24-01-30
+// function buildBoilerplate() {
+//   return sh('node build.js', {
+//     workingDir: project.absolute('boilerplate'),
+//   });
+// }
 
 /**
  * Builds documentation pages, preview pages and source files by parsing
@@ -287,8 +291,9 @@ function buildPrepare(done) {
     // fairly quick to build and would be annoying to eventually fail downstream
     buildSamples,
     gulp.parallel(
-      buildPlayground,
-      buildBoilerplate,
+// removed JG 24-01-30
+      // buildPlayground,
+      // buildBoilerplate,
       // buildPixi,
       buildFrontend21,
       importAll,
@@ -304,9 +309,10 @@ function buildPrepare(done) {
         './pages/content/',
         './pages/shared/',
         './dist/',
-        './boilerplate/lib/',
-        './boilerplate/dist/',
-        './playground/dist/',
+// removed JG 24-01-30
+//         './boilerplate/lib/',
+//         './boilerplate/dist/',
+//         './playground/dist/',
         './frontend21/dist/',
         './.cache/',
         './examples/static/samples/samples.json',
@@ -783,9 +789,10 @@ exports.icons = icons;
 exports.templates = templates;
 exports.importAll = importAll;
 exports.importComponents = importComponents;
-exports.buildPlayground = buildPlayground;
-exports.buildPixi = buildPixi;
-exports.buildBoilerplate = buildBoilerplate;
+// removed JG 24-01-30
+// exports.buildPlayground = buildPlayground;
+// exports.buildPixi = buildPixi;
+// exports.buildBoilerplate = buildBoilerplate;
 exports.buildFrontend = buildFrontend;
 exports.buildSamples = buildSamples;
 exports.zipTemplates = zipTemplates;
@@ -796,7 +803,8 @@ exports.staticify = staticify;
 exports.unpackArtifacts = unpackArtifacts;
 exports.collectStatics = collectStatics;
 exports.whoAmI = whoAmI;
-exports.buildPixiFunctions = buildPixiFunctions;
+// removed JG 24-01-30
+// exports.buildPixiFunctions = buildPixiFunctions;
 exports.buildFinalize = gulp.series(
   gulp.parallel(collectStatics, persistBuildInfo),
   thumborImageIndex
