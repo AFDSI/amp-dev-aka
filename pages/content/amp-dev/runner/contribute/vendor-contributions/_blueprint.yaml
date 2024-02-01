@@ -1,7 +1,0 @@
-$view: /views/detail/docs-detail.j2
-$path: /runner/contribute/vendor-contributions/{base}.html
-$localization:
-  path: /{locale}/runner/contribute/vendor-contributions/{base}.html
-$title@: Third party contributions
-$order: 2
-
