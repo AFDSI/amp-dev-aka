@@ -1,0 +1,9 @@
+$title@: Contribute
+$view: /views/detail/docs-detail.j2
+$path: /runner/contribute/{base}.html
+$localization:
+  path: /{locale}/runner/contribute/{base}.html
+
+$order: 6
+
+bucket: true

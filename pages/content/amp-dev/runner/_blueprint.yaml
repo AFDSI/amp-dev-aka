@@ -1,0 +1,10 @@
+$path: /runner/{base}.html
+$view: /views/default.j2
+$title@: Lunch 2
+$localization:
+  path: /{locale}/runner/{base}.html
+$order: 7
+
+flyout:
+    - /content/amp-dev/runner/index.html
+    - /content/amp-dev/runner/contribute/index.html

@@ -1,0 +1,138 @@
+---
+$title: Guides/Tutorials
+$titles:
+  navigation: Guides/Tutorials
+$view: /views/2021/templates/documentation.j2
+$path: /runner/index.html
+$localization:
+  path: /{locale}/runner/index.html
+$order: 1
+$hidden: true
+description: "All resources you need."
+flyout:
+  description: Get started with AMP
+  icon: guides-documents
+
+highlight_guides:
+  websites:
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/optimize-measure/discovery.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/amp-cors-requests.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/animations/introduction_to_animations.md
+  stories:
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/optimize-measure/discovery.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/amp-cors-requests.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/how_amp_pages_are_cached.md
+  ads:
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/intro-to-amphtml-ads.md
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-caches-and-cors/amp-cors-requests.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/validation-workflow/validate_amp.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/amp-html-layout/index.md
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/animations/introduction_to_animations.md
+  email:
+    - /content/amp-dev/documentation/guides-and-tutorials/start/create_email.md
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/testing_amp_emails.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/email_fundamentals.md
+    - /content/amp-dev/documentation/guides-and-tutorials/develop/amp_email_best_practices.md
+    - /content/amp-dev/documentation/guides-and-tutorials/learn/email-spec/amp-email-format.md
+
+recent_guides: !g.yaml /shared/data/recent-guides.yaml
+
+guides:
+  start:
+    icon_name: start
+    headline: Start
+    text: Building a 'Hello World' page and try adding your first interactive feature to an AMP page.
+    links:
+      - /content/amp-dev/documentation/guides-and-tutorials/start/create/basic_markup.md
+  learn:
+    icon_name: learn
+    headline: Learn
+    text: Building a 'Hello World' page and try adding your first interactive feature to an AMP page.
+    links:
+      - /content/amp-dev/documentation/guides-and-tutorials/learn/spec/amphtml.md
+  develop:
+    icon_name: develop
+    headline: Develop
+    text: "Create every content, layout, and feature your website needs."
+    links:
+      - /content/amp-dev/documentation/guides-and-tutorials/develop/style_and_layout/index.md
+  integration:
+    icon_name: integration
+    headline: Integrate
+    text: "Combine your pages with non-AMP pages, a PWA, native apps and more."
+    links:
+      - /content/amp-dev/documentation/guides-and-tutorials/integrate/integrate-with-apps.md
+  optimize:
+    icon_name: optimize
+    headline: Optimize & Measure
+    text: "Make more out of your AMP pages through analytics, optimal delivery and caching."
+    links:
+      - /content/amp-dev/documentation/guides-and-tutorials/optimize-measure/configure-analytics/index.md
+
+---
+<section class="ap--section">
+  <h1>{{ doc.title }}</h1>
+  <p>Here you can find everything you need to build AMP experiences. The sidebar on the left shows you all resources for building <strong>AMP [= format if format !== 'email' else 'emails' =].</strong></p>
+</section>
+
+
+{% do doc.styles.addCssFile('css/components/molecules/teaser-highlight-guides.css') %}
+<section class="ap--section">
+  <div class="ap-m-teaser-highlight-guides">
+    <h2>Highlighted Guides & Tutorials</h2>
+    <div class="ap-m-teaser-container">
+      {% for format in doc.highlight_guides %}
+      [% if format == '{{ format }}' %]
+        {% set columns = doc.highlight_guides[format] %}
+        {% for columns in doc.highlight_guides[format]|slice(3)%}
+        <div class="ap-m-teaser ap-m-teaser-column-box">
+          {% for teaser_doc in columns %}
+          {% set teaser_doc = g.doc(teaser_doc, locale=doc.locale) %}
+            [% if format in '{{ teaser_doc.formats }}' %]
+              {% with highlightedTeaser = True %}
+              {% include 'views/partials/teaser.j2' %}
+              {% endwith %}
+            [% endif %]
+          {% endfor %}
+        </div>
+        {% endfor%}
+      [% endif%]
+      {% endfor %}
+    </div>
+  </div>
+</section>
+
+{% if doc.recent_guides %}
+<section class="ap--section">
+  <div class="ap-m-teaser-highlight-guides ap-m-teaser-highlight-guides-recent">
+    <h2>Recent Guides & Tutorials</h2>
+
+    <div class="ap-m-teaser-container">
+      [% set counter = 0 %]
+      <div class="ap-m-teaser ap-m-teaser-column-box">
+      {% for guide in doc.recent_guides %}
+        {% set teaser_doc = g.doc(guide.path, locale=doc.locale) %}
+        [% if format in '{{ teaser_doc.formats }}' and counter < 6 %]
+
+          [% set counter = counter + 1 %]
+          [% if counter is odd and counter != 1 %]
+          </div><div class="ap-m-teaser ap-m-teaser-column-box">
+          [% endif %]
+
+          {% with highlightedTeaser = True %}
+          {% include 'views/partials/teaser.j2' %}
+          {% endwith %}
+        [% endif %]
+      {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+{% endif %}
