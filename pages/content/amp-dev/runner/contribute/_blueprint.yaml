@@ -3,7 +3,9 @@ $view: /views/detail/docs-detail.j2
 $path: /runner/contribute/{base}.html
 $localization:
   path: /{locale}/runner/contribute/{base}.html
-
-$order: 6
+$order: 8
 
 bucket: true
+
+flyout:
+    - /content/amp-dev/runner/contribute/contribute-documentation/index.html
