@@ -3,7 +3,7 @@ $title@: Success Stories
 $path: /success-stories/index.html
 $localization:
   path: /{locale}/success-stories/index.html
-$view: /views/custom.j2
+$view: /views/2021/base.html
 $hidden: true
 stage:
   layout: all
@@ -122,7 +122,7 @@ stage:
     <div class="ap-o-teaser-grid">
       <div class="ap-o-teaser-grid-list">
         {% for teaser_doc in doc.collection.list_docs(locale=doc.locale, order_by='date')|reverse %}
-        {% include '/views/partials/teaser.j2' %}
+        {% include '/views/2021/partials/teaser.j2' %}
         {% endfor %}
       </div>
     </div>
