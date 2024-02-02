@@ -1,5 +1,6 @@
-$title@: Lunch 2
-$view: /views/default.j2
+$title@: Test
+$view: /views/2021/base.html
+# $view: /views/default.j2
 $path: /runner/{base}.html
 $localization:
   path: /{locale}/runner/{base}.html

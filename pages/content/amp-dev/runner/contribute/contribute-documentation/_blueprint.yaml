@@ -1,9 +1,0 @@
-$view: /views/detail/docs-detail.j2
-$path: /runner/contribute/contribute-documentation/{base}.html
-$localization:
-  path: /{locale}/runner/contribute/contribute-documentation/{base}.html
-$title@: Contribute documentation
-$order: 1
-
-flyout:
-    - /content/amp-dev/runner/contribute/contribute-documentation/index.html

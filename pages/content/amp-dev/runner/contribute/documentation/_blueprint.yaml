@@ -1,11 +1,10 @@
-$title@: Contribute
+$title@: Documentation
 $view: /views/2021/base.html
 # $view: /views/detail/docs-detail.j2
-$path: /runner/contribute/{base}.html
+$path: /runner/contribute/documentation/{base}.html
 $localization:
-  path: /{locale}/runner/contribute/{base}.html
+  path: /{locale}/runner/contribute/documentation/{base}.html
 $order: 1
 
 flyout:
-    - /content/amp-dev/runner/contribute/index.html
     - /content/amp-dev/runner/contribute/documentation/index.html
