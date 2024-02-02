@@ -1,0 +1,10 @@
+$title@: Documentation
+$view: /views/2021/base.html
+# $view: /views/detail/docs-detail.j2
+$path: /runner/contrib/docs/{base}.html
+$localization:
+  path: /{locale}/runner/contrib/docs/{base}.html
+$order: 1
+
+flyout:
+    - /content/amp-dev/runner/contrib/docs/index.html
