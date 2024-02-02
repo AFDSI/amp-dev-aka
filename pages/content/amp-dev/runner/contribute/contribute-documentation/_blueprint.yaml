@@ -5,3 +5,5 @@ $localization:
 $title@: Contribute documentation
 $order: 1
 
+flyout:
+    - /content/amp-dev/runner/contribute/contribute-documentation/index.html

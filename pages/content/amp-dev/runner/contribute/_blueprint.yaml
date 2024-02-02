@@ -8,4 +8,5 @@ $order: 8
 bucket: true
 
 flyout:
+    - /content/amp-dev/runner/contribute/index.html
     - /content/amp-dev/runner/contribute/contribute-documentation/index.html
