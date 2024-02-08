@@ -36,20 +36,8 @@ const DEFAULT_LOCALE = 'en';
 
 const AVAILABLE_LOCALES = [
   'en',
-//  'de',
   'fr',
-//  'ar',
   'es',
-//  'it',
-//  'id',
-//  'ja',
-//  'ko',
-//  'pt_BR',
-//  'ru',
-//  'tr',
-//  'zh_CN',
-//  'pl',
-//  'vi',
 ];
 
 class Config {
