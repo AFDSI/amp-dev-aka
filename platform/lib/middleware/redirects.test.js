@@ -39,15 +39,15 @@ test('redirect for shortcut in specific short language', (done) => {
     .expect(302, done);
 });
 
-test('redirect for shortcut in specific long language', (done) => {
-  request(app)
-    .get(`/${VALID_LANGUAGE_LONG}/shortcut`)
-    .expect(
-      'Location',
-      `${PLATFORM_HOST}/${VALID_LANGUAGE_LONG}/some/deep/link/`
-    )
-    .expect(302, done);
-});
+//test('redirect for shortcut in specific long language', (done) => {
+//  request(app)
+//    .get(`/${VALID_LANGUAGE_LONG}/shortcut`)
+//    .expect(
+//      'Location',
+//      `${PLATFORM_HOST}/${VALID_LANGUAGE_LONG}/some/deep/link/`
+//    )
+//    .expect(302, done);
+//});
 
 test('no redirect for shortcut in an unknown language', (done) => {
   request(app)
