@@ -101,7 +101,7 @@ jobs:
 #            'id',
 #            'ja',
 #            'ko',
-#            'pt_BR',
+            'pt_BR',
 #            'ru',
 #            'tr',
 #            'zh_CN',
