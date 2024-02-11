@@ -22,7 +22,7 @@ flyout:
         </div>
       </div>
       <div class="ap-text-block">
-        <h1 class="ap-h1 ap-logo-stage-headline">{{ _('Start building websites with AMP') }}</h1>
+        <h1 class="ap-h1 ap-logo-stage-headline">{{ _('Execute all AMP JavaScript asynchronously') }}</h1>
       </div>
     </div>
   </section>
@@ -31,14 +31,11 @@ flyout:
     <div class="ap-text-aside-item --start">
       <div class="ap-text-block">
         <h2 class="ap-h2">
-          {{ _('Create a website') }}
+          {{ _('Keep all third-party JavaScript out of the critical path') }}
         </h2>
-        <p>
-          {{ _('AMP is the ultimate team player. Many CMS\' and frameworks have AMP integrations to get your site up and
-          running as quickly as an AMP page loads! If you\'re using an in-house solution, AMP provides tools and
-          optimizations for easy integration. Keep scrolling to find the best solution to amplify your site and delight
-          your users.') }}
-        </p>
+        <p>{{ _('Third-party JS likes to use synchronous JS loading. They also like to <code>document.write</code> more sync scripts. For example, if you have five ads on your page, and each of them cause three synchronous loads, each with a 1 second latency connection, you’re in 15 seconds of load time just for JS loading.') }}</p>
+        <p>{{ _('AMP pages allow third-party JavaScript but only in sandboxed iframes. By restricting them to iframes, they can’t block the execution of the main page. Even if they trigger multiple style re-calculations, their tiny iframes have very little DOM. ') }}</p>
+        <p>{{ _('The time it takes to do style-recalculations and layouts are restricted by DOM size, so the iframe recalculations are very fast compared to recalculating styles and layout for the page.') }}</p>
       </div>
     </div>
   </section>
