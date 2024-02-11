@@ -1,35 +1,31 @@
 ---
-$title: Additional Documentation
+$title@: Design Templates
 $view: /views/2021/templates/documentation.j2
 $path: /runner/contrib/docs/index.html
 $localization:
   path: /{locale}/runner/contrib/docs/{base}.html
 
 flyout:
-  description: Make it easy
+  description: Begin building
   icon: amp-email
 ---
 {% do doc.styles.addCssFile('css/components/templates/roadmap.css') %}
 
 <main class="ap--main ap-t-roadmap">
-  <section class="ap--stage ap--container-fluid">
-    {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
-    <div class="ap-o-stage">
-      <div class="ap--container-fluid">
-        <div class="ap-o-stage-content">
-          <h1 class="ap-o-stage-content-headline">{{ _('The latest news') }}</h1>
-        </div>
-        <div class="ap-o-stage-image">
-          {% do doc.icons.useIcon('icons/roadmap-header.svg') %}
-          <svg style="height: 80%; width: 100%;"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#roadmap-header"></use></svg>
-        </div>
+  <section class="ap--container">
+    {% do doc.styles.addCssFile('/css/components/molecules/jumbo.css') %}
+    <div class="ap-m-jumbo">
+      <div class="ap-a-ico">
+        {% do doc.icons.useIcon('/icons/code-architecture.svg') %}
+        <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#code-architecture"></use></svg>
       </div>
+      <h1 class="ap-m-jumbo-headline">{{ _('Communication Channels') }}</h1>
     </div>
   </section>
 
   <section class="ap-t-roadmap-intro">
     <p class="ap-t-roadmap-intro-text">
-    {{ _('As a source for breaking news and information, Web Stories allow us to showcase our quality journalism when there are multiple elements we want to bring together. Combining reporting, photography, videos and motion graphics, this gives readers a more visual entry point when they are searching for our coverage.') }}
+    {{ _('Web developers and designers with an interest in AMP--whether you’ve had experience using AMP and want to create better experiences, you’re curious about how you can use AMP to improve your site, or you want to contribute to AMP to make it better for everyone.') }}
     </p>
   </section>
 </main>

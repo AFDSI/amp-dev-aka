@@ -1,4 +1,4 @@
-$title@: Test
+$title@: Presentation
 $view: /views/2021/base.html
 $path: /runner/{base}.html
 $localization:

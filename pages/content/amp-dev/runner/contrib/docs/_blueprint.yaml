@@ -1,6 +1,5 @@
-$title@: Documentation
+$title@: Design Templates
 $view: /views/2021/templates/documentation.j2
-# $view: /views/detail/docs-detail.j2
 $path: /runner/contrib/docs/{base}.html
 $localization:
   path: /{locale}/runner/contrib/docs/{base}.html
