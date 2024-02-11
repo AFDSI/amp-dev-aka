@@ -1,9 +1,9 @@
 $title@: Documentation
 $view: /views/2021/templates/documentation.j2
 # $view: /views/detail/docs-detail.j2
-$path: /docs/{base}.html
+$path: /runner/contrib/docs/{base}.html
 $localization:
-  path: /{locale}/docs/{base}.html
+  path: /{locale}/runner/contrib/docs/{base}.html
 $order: 1
 
 flyout:
