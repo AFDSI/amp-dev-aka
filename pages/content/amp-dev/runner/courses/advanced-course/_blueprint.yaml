@@ -1,0 +1,10 @@
+$title@: Advanced Course
+$view: /views/detail/docs-detail.j2
+$path: /runner/courses/advanced-course/{base}.html
+$localization:
+  path: /{locale}/runner/courses/advanced-course/{base}.html
+$order: 4
+toc: false
+
+chaptered: true
+tutorial: true
