@@ -7,9 +7,11 @@ $order: 7
 
 flyout:
     - /content/amp-dev/runner/index.html
+    - /content/amp-dev/runner/contrib/index.html
+    - /content/amp-dev/runner/contrib/docs/index.html
     - /content/amp-dev/runner/1/index.html
     - /content/amp-dev/runner/1/1.1/index.html
     - /content/amp-dev/runner/1/1.2/index.html
     - /content/amp-dev/runner/2/index.html
-    - /content/amp-dev/runner/2/1.1/index.html
-    - /content/amp-dev/runner/2/1.2/index.html
+    - /content/amp-dev/runner/2/2.1/index.html
+    - /content/amp-dev/runner/2/2.2/index.html
