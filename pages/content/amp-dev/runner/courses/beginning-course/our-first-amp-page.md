@@ -4,7 +4,6 @@ $order: 3
 leveled: true
 ---
 
-[filter level="beginner"]
 ## Starting Our Journey
 
 It’s our team’s first day building out our Chico’s Cheese Bike site. So far, the site is a basic HTML page, with a header containing the title of our site, an image of one of our bikes, and some marketing text.
@@ -232,8 +231,7 @@ This is an important error to understand. Some HTML tags are not allowed in AMP 
 **Note**: You can start your future AMP pages using the HTML [here](../../../documentation/guides-and-tutorials/start/create/basic_markup.md) as a starting point. This HTML includes the AMP boilerplate from above. It contains all the required tags and elements we’ve covered so far. Alternatively, you can customize your starting point with additional features using the boilerplate generation tool [here](https://amp.dev/boilerplate).
 
 [/tip]
-[/filter]
-[filter level="advanced"]
+
 ## Starting Our Journey
 
 It's our team's first day building out our Chico's Cheese Bike site. So far, the site is a basic HTML page, with a header containing the title of our site, an image of one of our bikes, and some marketing text. Our goal is to convert this page to AMP!
@@ -450,4 +448,3 @@ The tag 'img' may only appear as a descendant of tag 'noscript'. Did you mean 'a
 ```
 
 This is an important error to understand. Some HTML tags are not allowed in AMP documents. In some cases, AMP requires you to use an alternative. We call these custom, non-standard HTML tags "components," and we’ll discuss them at greater length later in the next section of this training.
-[/filter]

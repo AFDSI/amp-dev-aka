@@ -10,20 +10,26 @@ flyout:
   icon: amp-email
 ---
 
-<main class="ap--main">
-  <section class="ap--container">
-    {% do doc.styles.addCssFile('/css/components/molecules/jumbo.css') %}
-    <div class="ap-m-jumbo">
-      <div class="ap-a-ico">
+{% do doc.styles.addCssFile('css/components/templates/roadmap.css') %}
+
+<main class="ap--main ap-t-roadmap">
+  <section class="ap--stage ap--container-fluid">
+    {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
+    <div class="ap-o-stage">
+      <div class="ap-o-stage-image">
         {% do doc.icons.useIcon('/icons/code-architecture.svg') %}
         <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#code-architecture"></use></svg>
       </div>
-      <h1 class="ap-m-jumbo-headline">{{ _('Communication Channels') }}</h1>
+      <div class="ap--container-fluid">
+        <div class="ap-o-stage-content">
+          <h1 class="ap-o-stage-content-headline">{{ _('Communication Channels') }}</h1>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section class="ap--container">
-    <p>
+  <section class="ap-t-roadmap-intro">
+    <p class="ap-t-roadmap-intro-text">
     {{ _('Web developers and designers with an interest in AMP--whether you’ve had experience using AMP and want to create better experiences, you’re curious about how you can use AMP to improve your site, or you want to contribute to AMP to make it better for everyone.') }}
     </p>
   </section>

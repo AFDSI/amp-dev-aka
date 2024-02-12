@@ -1,5 +1,5 @@
 $title@: Beginning Course
-$view: /views/detail/docs-detail.j2
+$view: /views/2021/base.html
 $path: /runner/courses/beginning-course/{base}.html
 $localization:
   path: /{locale}/runner/courses/beginning-course/{base}.html

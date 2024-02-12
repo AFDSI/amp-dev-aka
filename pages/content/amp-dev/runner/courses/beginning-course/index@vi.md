@@ -1,7 +1,6 @@
 ---
 $title: Chào mừng bạn đến với Cộng đồng AMP!
 ---
-[filter level="beginner"]
 ## Tại sao là AMP?
 
 Theo nhiều cách khác nhau, Internet hiện tại là trung tâm của Thế giới. Mỗi ngày, hàng trăm triệu người từ khắp nơi trên thế giới truy cập thông tin trực tiếp. Nhưng không quá nhiều kết nối vào Internet đến từ các đường truyền tốc độ cao hoặc thiết bị công suất cao. Khi các website được phát triển chỉ dành cho những kết nối và thiết bị truy cập nhanh nhất, những trải nghiệm của nhiều người dùng khác sẽ có sự ảnh hưởng.
@@ -41,8 +40,7 @@ Hiểu về AMP là một cách rất tốt để bạn bắt đầu học cách
 Bạn có thể có được các kỹ năng khi xây dựng các trang AMP dựa vào sự dịch chuyển cách xây dựng website ở một định dạng (formats) hoặc thư viện khung (frameworks) khác. Giống như nhiều frameworks phổ biến, AMP là một cách tiếp cận dựa trên các thành phần để thiết kế và xây dựng website. Bạn sẽ học cách xây dựng website với các bài tập mô phỏng tốt nhất đã được kiểm chứng, bắt đầu suy nghĩ về các thành phần và tránh các thói quen xấu ảnh hưởng đến trải nghiệm người dùng. Những kỹ năng phổ quát có thể được áp dụng trên web.
 
 AMP hỗ trợ cải thiện hiệu suất, khả năng truy cập và có độ tuỳ biến cao để bạn có thể tập trung 100% vào các tính năng. Tuy nhiên, nếu bạn muốn trau dồi kỹ năng của mình, học AMP cũng có thể giúp bạn khám phá chính xác cách AMP đang giải quyết những mối quan tâm này. Bạn sẽ tiếp tục học hỏi và phát triển như một Nhà phát triển, ngay cả khi người dùng của bạn thích những trải nghiệm mà AMP đã giúp bạn xây dựng.
-[/filter]
-[filter level="advanced"]
+
 AMP là một thư viện các thành phần web đã thực thi những bài tập mô phỏng tốt nhất dành cho web cùng các sơ đồ đệm (cache scheme). Cùng với nhau, AMP có thể giúp các nhà phát triển tạo ra các website tương tác, hiệu quả một cách nhanh chóng.
 
 Nhiều người dùng truy cập vào website đến từ các đường truyền tốc độ thấp hoặc thiết bị công suất thấp. Khi các website được phát triển chỉ dành cho những kết nối và thiết bị truy cập nhanh nhất, những trải nghiệm của nhiều người dùng khác sẽ có sự ảnh hưởng.
@@ -59,4 +57,3 @@ Do vậy, AMP hoạt động nhằm cải thiện hiệu suất web bằng cách
 AMP đặt ra các hạn chế về vị trí và cách bạn sử dụng JavaScript vào website. Hạn chế này giúp cải thiện đáng kể hiệu suất hiển thị của website trên các thiết bị di động. Các thành phần AMP cung cấp cũng tận dụng nhiều chức năng mà các nhà phát triển đã được sử dụng JavaScript ngay từ đầu - điều đó có nghĩa là bạn không còn phải viết nhiều JavaScript hay dựa vào các thư viện từ những bên thứ ba. Mặt khác, AMP có nhiều điểm tương đồng với các giao diện thư viện khung (front-end frameworks) khác; vì vậy, các kỹ năng lập trình front-end của bạn sẽ luôn hữu ích khi bạn tiếp cận AMP.
 
 Lợi ích khi ứng dụng AMP không dừng lại khi website của bạn đã được triển khai và sẵn sàng hoạt động. Các công ty lớn như chúng tôi - Google - và Microsoft đã tạo ra những bộ nhớ đệm lưu trữ các trang AMP không có lỗi xác thực. Các bộ nhớ đệm này có thể được ứng dụng nhằm tối ưu hoá mạnh mẽ hiệu suất nội dung cho website của bạn mà không ảnh hưởng đến cách mà người dùng của bạn trải nghiệm nó. Các trang AMP được lưu trữ trong bộ nhớ đệm cũng đồng thời được tích hợp với các công cụ tìm kiếm để có thể truy cập website của bạn từ các kết quả tìm kiếm chỉ trong vài giây, hoặc thậm chí là ít hơn!
-[/filter]
