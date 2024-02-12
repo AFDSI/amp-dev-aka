@@ -6,5 +6,5 @@ $localization:
 $order: 3
 toc: false
 
-chaptered: true
-tutorial: true
+flyout:
+    - /content/amp-dev/runner/courses/intermediate-course/index.md

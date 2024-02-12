@@ -7,10 +7,4 @@ $order: 2
 
 flyout:
     - /content/amp-dev/runner/courses/beginning-course/index.md
-    - /content/amp-dev/runner/courses/beginning-course/course-introduction.md
-    - /content/amp-dev/runner/courses/beginning-course/thinking-in-components.md
-    - /content/amp-dev/runner/courses/beginning-course/finding-the-right-component.md
-    - /content/amp-dev/runner/courses/beginning-course/our-first-amp-page.md
-    - /content/amp-dev/runner/courses/beginning-course/conclusions-and-whats-next.md
-    - /content/amp-dev/runner/courses/beginning-course/appendix.md
 
