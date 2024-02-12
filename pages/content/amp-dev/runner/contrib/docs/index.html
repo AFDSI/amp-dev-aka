@@ -10,27 +10,24 @@ flyout:
   icon: amp-email
 ---
 
-{% do doc.styles.addCssFile('css/components/templates/roadmap.css') %}
+<main class="ap--main ">
 
-<main class="ap--main ap-t-roadmap">
-  <section class="ap--stage ap--container-fluid">
-    {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
-    <div class="ap-o-stage">
-      <div class="ap-o-stage-image">
+  <section class="ap-home-stage">
+    <div class="ap-home-stage-logo">
         {% do doc.icons.useIcon('/icons/code-architecture.svg') %}
         <svg><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#code-architecture"></use></svg>
-      </div>
-      <div class="ap--container-fluid">
-        <div class="ap-o-stage-content">
-          <h1 class="ap-o-stage-content-headline">{{ _('Communication Channels') }}</h1>
-        </div>
-      </div>
     </div>
   </section>
 
-  <section class="ap-t-roadmap-intro">
-    <p class="ap-t-roadmap-intro-text">
-    {{ _('Web developers and designers with an interest in AMP--whether you’ve had experience using AMP and want to create better experiences, you’re curious about how you can use AMP to improve your site, or you want to contribute to AMP to make it better for everyone.') }}
-    </p>
+  <section class="ap-intro ap-section --col-right">
+    <div class="ap-text-block">
+      <h1>
+      {{ _('Communication Channels') }}
+      </h1>
+      <p>
+      {{ _('Web developers and designers with an interest in AMP--whether you’ve had experience using AMP and want to create better experiences, you’re curious about how you can use AMP to improve your site, or you want to contribute to AMP to make it better for everyone.') }}
+      </p>
+    </div>
   </section>
+
 </main>
