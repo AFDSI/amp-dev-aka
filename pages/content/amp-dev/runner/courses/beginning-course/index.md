@@ -1,5 +1,5 @@
 ---
-$title: Welcome to the AMP community!
+$title: Welcome to the community!
 $order: 1
 $titles:
   teaser: Beginning Course
