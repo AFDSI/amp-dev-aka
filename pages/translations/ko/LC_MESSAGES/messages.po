@@ -3165,3 +3165,12 @@ msgstr "즉시 사용 가능한 프레임워크 또는 통합 지원 CMS를 선�
 
 msgid "See supported platforms"
 msgstr "지원되는 플랫폼 보기"
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr "군인은 현역을 면한 후가 아니면 국무위원으로 임명될 수 없다. 모든 국민은 자기의 행위가 아닌 친족의 행위로 인하여 불이익한 처우를 받지 아니한다. 강화조약. 비상계엄이 선포된 때에는 법률이 정하는 바에 의하여 영장제도."
+
+msgid "Now is the time for action."
+msgstr "이제 행동을 취할 때입니다."
+
+msgid "The sun is a star."
+msgstr "태양은 별이다."

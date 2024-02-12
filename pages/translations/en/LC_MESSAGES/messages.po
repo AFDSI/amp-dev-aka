@@ -3166,3 +3166,12 @@ msgstr ""
 
 msgid "See supported platforms"
 msgstr ""
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr ""
+
+msgid "Now is the time for action."
+msgstr ""
+
+msgid "The sun is a star."
+msgstr ""

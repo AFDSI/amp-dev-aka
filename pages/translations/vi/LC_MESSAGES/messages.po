@@ -3166,3 +3166,12 @@ msgstr "Chọn một khung sẵn dùng hoặc CMS được tích hợp để thi
 
 msgid "See supported platforms"
 msgstr "Xem các nền tảng được hỗ trợ"
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr "Lorem ipsum dolor sit amet, ex quo primis Repudiandae. Hai lỗi thúc đẩy accusamus ut, không có sự thèm ăn nào thực sự. Chỉ có một điều duy nhất là bạn có thể hoàn thành nó. Hãy xem một người viết tranh chấp là hợp pháp với người yêu cũ của anh ấy. Audire Senentiae no eum, mel nulla aliquid nusquam at."
+
+msgid "Now is the time for action."
+msgstr "Bây giờ là lúc để hành động."
+
+msgid "The sun is a star."
+msgstr "Mặt trời là một ngôi sao."

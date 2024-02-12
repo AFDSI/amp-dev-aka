@@ -3165,3 +3165,12 @@ msgstr "حدد إطار عمل جاهزًا للعمل أو CMS تم تمكين�
 
 msgid "See supported platforms"
 msgstr "انظر المنصات المدعومة"
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr "لوريم إيبسوم ألم يجلس أميت، على سبيل المثال primis repudianae. خطأ ثنائي يدفع إلى التسبب في عدم الشهية أو أي شيء آخر. Ad Solet MEA، eos suas complectitur ea. Vis an scribentur disputando, suaslegimus su ex. الاستماع إلى عبارات لا تحتوي على أي سائل في."
+
+msgid "Now is the time for action."
+msgstr "الآن هو الوقت المناسب للعمل."
+
+msgid "The sun is a star."
+msgstr "الشمس هو نجم."

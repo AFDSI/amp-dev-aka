@@ -3165,3 +3165,12 @@ msgstr "Seleccione un entorno de trabajo listo para usar o un CMS con capacidad 
 
 msgid "See supported platforms"
 msgstr "Consulte las plataformas que son compatibles"
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr "Es el dolor mismo lo primero que hay que rechazar. Le acusamos de dos errores, que no debe tener miedo del otro. Como siempre, ella los abraza. Si deben escribirse en disputa, leemos los suyos en No escuches su opinión, cariño, no hay nada de nada."
+
+msgid "Now is the time for action."
+msgstr "Ahora es el tiempo de actuar."
+
+msgid "The sun is a star."
+msgstr "El Sol es una estrella."

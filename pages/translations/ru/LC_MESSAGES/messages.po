@@ -3168,3 +3168,12 @@ msgstr "Воспользуйтесь готовым фреймворком ил�
 
 msgid "See supported platforms"
 msgstr "Просмотреть поддерживаемые платформы"
+
+msgid "Lorem ipsum dolor sit amet, ex quo primis repudiandae. Duo error impetus accusamus ut, no vel cetero verear appetere. Ad solet soleat mea, eos suas complectitur ea. Vis an scribentur disputando, suas legimus his ex. Audire sententiae no eum, mel nulla aliquid nusquam at."
+msgstr "Лорем ипсум долор сит амет, маиорум партиендо не мел. Ан адхуц делецтус продессет вим. Дицант иуварет тибияуе ат еос, солет номинави еи усу. Иллум луптатум витуператорибус еос ид."
+
+msgid "Now is the time for action."
+msgstr "Теперь время действовать."
+
+msgid "The sun is a star."
+msgstr "Солнце - звезда."
