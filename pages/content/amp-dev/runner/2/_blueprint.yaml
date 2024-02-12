@@ -1,0 +1,11 @@
+$title@: 2
+$view: /views/2021/base.html
+$path: /runner/2/{base}.html
+$localization:
+  path: /{locale}/runner/2/{base}.html
+$order: 7
+
+flyout:
+    - /content/amp-dev/runner/2/index.html
+    - /content/amp-dev/runner/2/1.1/index.html
+    - /content/amp-dev/runner/2/1.2/index.html
