@@ -22,7 +22,7 @@ const {PAGES_DEST} = require('@lib/utils/project').paths;
 const {NETLIFY_DEPLOY_TOKEN} = process.env;
 const SITES = [
   {
-    NAME: 'amp.dev',
+    NAME: 'challangerdeep.netlify.app',
     ID: 'dff91c68-0a3a-4ccd-a5d5-ada619a2ed40',
     DIR: PAGES_DEST,
   },
