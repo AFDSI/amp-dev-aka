@@ -26,12 +26,16 @@ stage:
       alt: Carved
       url: carved
 ---
+{#
 {% do doc.styles.addCssFile('css/components/templates/success-story.css') %}
+#}
 
 {% block main %}
 <main class="ap--main ap-t-success-story">
 <section class="ap--stage ap--container-fluid">
+{#
   {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
+#}
   <div class="ap-o-stage ap-o-stage-websites {{doc.stage.layout}}">
     <div class="ap--container-fluid">
       <div class="ap-o-stage-content">
@@ -43,13 +47,17 @@ stage:
 
   {# ghost frame block #}
   {% if doc.stage.devices %}
+{#
   {% do doc.styles.addCssFile('css/components/organisms/ghost-frame-block.css') %}
+#}
     <div class="ap-o-ghost-frame-block">
       {% for device in doc.stage.devices %}
       {% if device %}
+{#
       {% do doc.styles.addCssFile('css/components/molecules/ghost-frame-desktop.css') %}
       {% do doc.styles.addCssFile('css/components/molecules/ghost-frame-tablet.css') %}
       {% do doc.styles.addCssFile('css/components/molecules/ghost-frame-mobile.css') %}
+#}
       <div class="ap-m-ghost-frame-{{device.type}} {{device.direction}}">
         {% if device.video_src %}
         {% if device.video_id %}
@@ -91,8 +99,10 @@ stage:
       <p>{{ _('Here we feature interesting and outstanding pages that have been published using AMP. We kindly invite you to look through them to see what AMP is capable of.') }}</p>
     </div>
 
+{#
     {% do doc.styles.addCssFile('css/components/organisms/filter-bubbles-list.css') %}
     {% do doc.styles.addCssFile('css/components/atoms/pill.css', -100) %}
+#}
     <div class="ap-o-filter-bubbles-list">
       <button
         [% if not category or category not in '{{ categories }}' %]
@@ -122,10 +132,10 @@ stage:
     <div class="ap-o-teaser-grid">
       <div class="ap-o-teaser-grid-list">
         {% for teaser_doc in doc.collection.list_docs(locale=doc.locale, order_by='date')|reverse %}
-        {% include '/views/partials/teaser.j2' %}
 {#
-        {% include '/views/2021/partials/teaser.j2' %}
+        {% include '/views/partials/teaser.j2' %}
 #}
+        {% include '/views/2021/partials/teaser.j2' %}
         {% endfor %}
       </div>
     </div>
