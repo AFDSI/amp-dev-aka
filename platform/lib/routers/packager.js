@@ -75,7 +75,7 @@ const packager = (request, response, next) => {
     return;
   }
   // Hard-code amp.dev as it has to match the cert
-  const urlToSign = `https://amp.dev${request.url}`;
+  const urlToSign = `https://challangerdeep.netlify.app${request.url}`;
   const searchParams = new URLSearchParams({
     sign: urlToSign,
   }).toString();
