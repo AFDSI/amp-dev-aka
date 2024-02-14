@@ -3,8 +3,6 @@
 @import '../../frontend/scss/components/atoms/_bevel.scss';
 @import '../../frontend/scss/components/atoms/_color.scss';
 @import '../../frontend/scss/components/atoms/_icon.scss';
-@import '../../frontend/scss/components/atoms/fab.scss';
-@import '../../frontend/scss/components/atoms/format-tags.scss';
 
 @import 'variables.scss';
 @import 'functions.scss';
@@ -53,9 +51,11 @@
 @import 'components/new/docs-detail.scss';
 @import 'components/new/docs-guides-overview.scss';
 @import 'components/new/experiments.scss';
+@import 'components/new/fab.scss';
 @import 'components/new/faq-detail.scss';
 @import 'components/new/format-backgrounds.scss';
 @import 'components/new/format-filter-hint.scss';
+@import 'components/new/format-tags.scss';
 @import 'components/new/format-toggle.scss';
 @import 'components/new/ghost-frame-block.scss';
 @import 'components/new/ghost-frame-desktop.scss';
