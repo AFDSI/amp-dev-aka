@@ -1,65 +1,65 @@
 .#{utility('ampsidebar')} {
-  @include sidebar-ampsidebar;
+/*  @include sidebar-ampsidebar;*/
 
   &-toolbar {
-    @include sidebar-ampsidebar-toolbar;
+/*    @include sidebar-ampsidebar-toolbar;*/
   }
 }
 
 .#{organism('sidebar-default')} {
-  @include sidebar-wrapper;
+/*  @include sidebar-wrapper;*/
 
   .#{organism('sidebar')} {
     @include sidebar;
   }
 
   .nav {
-    @include sidebar-nav;
+/*    @include sidebar-nav;*/
 
     &-list {
-      @include sidebar-nav-list;
+/*      @include sidebar-nav-list;*/
 
       &.level-1 {
-        @include sidebar-nav-list-level-1;
+/*        @include sidebar-nav-list-level-1;*/
       }
 
       .nav-list {
-        @include sidebar-nav-list-sublevels;
+/*        @include sidebar-nav-list-sublevels;*/
       }
     }
 
     &-item {
-      @include sidebar-nav-item;
+/*      @include sidebar-nav-item;*/
 
       &.level-1 {
-        @include sidebar-nav-item-level-1;
+/*        @include sidebar-nav-item-level-1;*/
 
         .nav-link {
-          @include sidebar-nav-link-level-1;
+/*          @include sidebar-nav-link-level-1;*/
         }
 
         .nav-trigger,
         .nav-icon {
-          @include sidebar-nav-trigger-level-1;
+/*          @include sidebar-nav-trigger-level-1;*/
         }
 
         .nav-icon .#{atom('ico')} {
-          @include sidebar-nav-icon-level-1;
+/*          @include sidebar-nav-icon-level-1;*/
         }
       }
 
       &.level-2 {
         .nav-link {
-          @include sidebar-nav-link-level-2;
+/*          @include sidebar-nav-link-level-2;*/
         }
 
         .nav-trigger,
         .nav-icon {
-          @include sidebar-nav-trigger-level-2;
+/*          @include sidebar-nav-trigger-level-2;*/
         }
 
         .nav-icon .#{atom('ico')} {
-          @include sidebar-nav-icon-level-2;
+/*          @include sidebar-nav-icon-level-2;*/
         }
       }
 
@@ -67,7 +67,7 @@
         margin-left: 24px;
 
         .nav-link {
-          @include sidebar-nav-link-level-3;
+/*          @include sidebar-nav-link-level-3;*/
         }
 
         &.active {
@@ -77,16 +77,16 @@
       }
 
       &.active > .nav-link {
-        @include sidebar-nav-link-active;
+/*        @include sidebar-nav-link-active;*/
       }
 
       &:hover > .nav-link {
-        @include sidebar-nav-link-hover;
+/*        @include sidebar-nav-link-hover;*/
       }
     }
 
     &-item-tutorial-divider {
-      @include sidebar-nav-item-tutorial-divider;
+/*      @include sidebar-nav-item-tutorial-divider;*/
 
       &:first-child {
         display: none;
@@ -98,20 +98,20 @@
     }
 
     &-link {
-      @include sidebar-nav-link;
+/*      @include sidebar-nav-link;*/
     }
 
     &-link-lastword {
-      @include sidebar-nav-link-lastword;
+/*      @include sidebar-nav-link-lastword;*/
     }
 
     &-icon,
     &-trigger {
-      @include sidebar-nav-trigger;
+/*      @include sidebar-nav-trigger;*/
     }
 
     &-trigger {
-      @include sidebar-nav-trigger-state;
+/*      @include sidebar-nav-trigger-state;*/
 
       &:focus {
         outline: 1px dotted #212121;
@@ -120,11 +120,11 @@
     }
 
     &-icon .#{atom('ico')} {
-      @include sidebar-nav-icon;
+/*      @include sidebar-nav-icon;*/
     }
 
     &-type-icon {
-      @include sidebar-type-icon;
+/*      @include sidebar-type-icon;*/
     }
 
     span.nav-link + .nav-trigger {
