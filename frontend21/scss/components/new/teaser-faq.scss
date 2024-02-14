@@ -12,20 +12,20 @@
       transition: transform 0.3s cubic-bezier(0.25, 0.1, 0.25, 1);
 
       &:hover {
-        @include teaser-linking-hover;
+/*        @include teaser-linking-hover;*/
       }
     }
   }
 
   .#{molecule('teaser')} {
     &-card {
-      @include teaser-card;
+/*      @include teaser-card;*/
       border-radius: 0;
       height: 100%;
     }
 
     &-content {
-      @include teaser-content;
+/*      @include teaser-content;*/
       height: 100%;
       display: flex;
       flex-direction: column;
@@ -33,15 +33,15 @@
     }
 
     &-image {
-      @include teaser-image;
+/*      @include teaser-image;*/
     }
 
     &-headline {
-      @include teaser-headline;
+/*      @include teaser-headline;*/
     }
 
     &-copy {
-      @include teaser-copy;
+/*      @include teaser-copy;*/
     }
 
     &-link {
