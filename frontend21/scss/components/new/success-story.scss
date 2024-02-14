@@ -55,8 +55,8 @@ body {
       }
 
       h1 {
-        @include hl;
-        @include hl-h1;
+/*        @include hl;*/
+/*        @include hl-h1;*/
         margin-top: 0;
         color: color("white");
       }
