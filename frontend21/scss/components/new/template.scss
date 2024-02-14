@@ -1,4 +1,4 @@
-.#{template('template')} {
+.#{project('template')} {
 
   .#{utility('container')} {
     @include container;
