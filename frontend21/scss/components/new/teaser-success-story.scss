@@ -7,7 +7,7 @@
       /* @include teaser-linking; */
 
       &:hover {
-        @include teaser-linking-hover;
+        /* @include teaser-linking-hover; */
 
         .#{molecule('teaser')}-card {
           /* @include teaser-card-hover; */
