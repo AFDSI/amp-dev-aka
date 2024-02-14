@@ -1,0 +1,5 @@
+$title: Template
+$view: /views/2021/base.html
+$path: /runner/template/{base}.html
+$localization:
+  path: /{locale}/runner/template/{base}.html
