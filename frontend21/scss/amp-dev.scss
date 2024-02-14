@@ -38,6 +38,12 @@
 @import 'components/home/formats.scss';
 @import 'components/home/home-stage.scss';
 
+@import 'components/new/ghost-frame-block.scss';
+@import 'components/new/ghost-frame-desktop.scss';
+@import 'components/new/ghost-frame-mobile.scss';
+@import 'components/new/ghost-frame-tablet.scss';
+@import 'components/new/template.scss';
+
 html,
 body {
   color: color('charade');
