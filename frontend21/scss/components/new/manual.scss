@@ -67,14 +67,14 @@
   .#{utility('toc')} + .#{utility('content')} {
     @include content-with-sidebar;
   }
-
+/*
   .#{utility('content')} {
     h1 {@include hl-h2;}
     h2 {@include hl-h3;}
     h3 {@include hl-h4;}
     h4 {@include hl-h5;}
   }
-
+*/
     .#{utility('title')} {
       margin-top: 20px;
     }
