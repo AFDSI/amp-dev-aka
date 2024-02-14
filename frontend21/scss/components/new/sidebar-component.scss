@@ -72,23 +72,23 @@
 
       &.level-2 {
         .nav-link {
-          @include sidebar-nav-link-level-2;
+/*          @include sidebar-nav-link-level-2;*/
           padding: 3px 25px 3px 0;
           margin: 0;
         }
       }
 
       &.active > .nav-link {
-        @include sidebar-nav-link-active;
+/*        @include sidebar-nav-link-active;*/
       }
 
       &:hover > .nav-link {
-        @include sidebar-nav-link-hover;
+/*        @include sidebar-nav-link-hover;*/
       }
     }
 
     &-link {
-      @include sidebar-nav-link;
+/*      @include sidebar-nav-link;*/
     }
   }
 }
