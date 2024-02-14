@@ -1,15 +1,15 @@
 .#{molecule('teaser-template')} {
   &.#{molecule('teaser')} {
-    @include teaser;
+    /* @include teaser; */
 
     & > a {
-      @include teaser-linking;
+      /* @include teaser-linking; */
 
       &:hover {
-        @include teaser-linking-hover;
+        /* @include teaser-linking-hover; */
 
         .#{molecule('teaser')}-card {
-          @include teaser-card-hover;
+          /* @include teaser-card-hover; */
         }
       }
     }
@@ -17,25 +17,25 @@
 
   .#{molecule('teaser')} {
     &-tag {
-      @include teaser-tag;
+      /* @include teaser-tag; */
     }
 
     &-card {
-      @include teaser-card;
+      /* @include teaser-card; */
     }
 
     &-content {
-      @include teaser-content;
+      /* @include teaser-content; */
       padding-left: 0;
       padding-right: 0;
     }
 
     &-image {
-      @include teaser-image;
+      /* @include teaser-image; */
     }
 
     &-headline {
-      @include teaser-headline;
+      /* @include teaser-headline; */
     }
   }
 }
