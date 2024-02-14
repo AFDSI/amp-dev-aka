@@ -1,6 +1,6 @@
 .#{molecule('teaser-faq')} {
   &.#{molecule('teaser')} {
-    @include teaser;
+/*    @include teaser;*/
     flex-basis: 100%;
     margin: 0 0 2rem;
 
