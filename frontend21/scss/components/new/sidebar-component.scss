@@ -2,12 +2,12 @@
   @include sidebar-ampsidebar;
 
   &-toolbar {
-    @include sidebar-ampsidebar-toolbar;
+/*    @include sidebar-ampsidebar-toolbar;*/
   }
 }
 
 .#{organism('sidebar-component')} {
-  @include sidebar-wrapper;
+/*  @include sidebar-wrapper;*/
 
   .#{organism('sidebar')} {
     @include sidebar;
