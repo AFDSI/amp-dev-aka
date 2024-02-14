@@ -1,10 +1,10 @@
-.#{utility('copy')} {
+.#{molecule('copy')} {
   margin-bottom: 3em;
 
   &.no-margin {
     margin-bottom: 0;
   }
-
+/*
   p {
     @include txt;
   }
@@ -12,7 +12,7 @@
   &-large p {
     @include txt-1;
   }
-
+*/
   &-left {
     grid-column: 3 / 17;
 
