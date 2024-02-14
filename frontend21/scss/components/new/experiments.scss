@@ -50,7 +50,7 @@
 
   &-label {
     flex: 1 0 auto;
-    @include txt-font-accent;
+/*    @include txt-font-accent;*/
     color: color('black');
 
     #{$self}-iframe & {
@@ -61,7 +61,7 @@
   &-channel {
     margin-left: auto;
     margin-right: 6px;
-    @include txt-font-accent;
+/*    @include txt-font-accent;*/
 
     &-name {
       color: color('iron');

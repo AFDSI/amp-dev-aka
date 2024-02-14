@@ -26,18 +26,18 @@
   }
 
   &-content {
-    @include txt-2;
+/*    @include txt-2;*/
     min-width: 0;
 
     h4 {
-      @include txt-1;
+/*      @include txt-1;*/
       margin: 0 0 0.75em;
     }
 
     p,
     ul,
     ol {
-      @include txt-2;
+/*      @include txt-2;*/
 
       &:first-child {
         margin-top: 0;

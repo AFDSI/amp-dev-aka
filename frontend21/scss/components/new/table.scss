@@ -8,8 +8,8 @@ table {
   display: block;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
-  @include txt;
-  @include txt-2;
+/*  @include txt;*/
+/*  @include txt-2;*/
 
   @media (min-width: 768px){
     padding: 0;
@@ -18,7 +18,7 @@ table {
 }
 
 thead {
-  @include txt-strong;
+/*  @include txt-strong;*/
 
   tr {
     text-align: left;

@@ -109,8 +109,8 @@
 
   .#{molecule('teaser-info')} {
     &-trigger {
-      @include txt;
-      @include txt-3;
+/*      @include txt;*/
+/*      @include txt-3;*/
       color: color('black');
       background-color: color('white');
       margin-top: auto;
@@ -177,9 +177,9 @@
     }
 
     &-headline {
-      @include txt;
-      @include txt-2;
-      @include txt-strong;
+/*      @include txt;*/
+/*      @include txt-2;*/
+/*      @include txt-strong;*/
       padding: 10px 20px;
       color: color('charade');
     }
@@ -212,9 +212,9 @@
         margin: 0 8px 0 0;
 
         &-link {
-          @include txt;
-          @include txt-2;
-          @include txt-mono;
+/*          @include txt;*/
+/*          @include txt-2;*/
+/*          @include txt-mono;*/
           display: inline;
           letter-spacing: 0.03em;
           padding: 2px 4px;

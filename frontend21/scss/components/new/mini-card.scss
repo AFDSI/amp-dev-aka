@@ -1,5 +1,5 @@
 .#{molecule('mini-card')} {
-  @include txt;
+/*  @include txt;*/
   position: relative;
   display: flex;
   align-items: center;
@@ -28,7 +28,7 @@
   }
 
   strong  {
-    @include txt-strong;
+/*    @include txt-strong;*/
   }
 
   @media (max-width: 374px) {
