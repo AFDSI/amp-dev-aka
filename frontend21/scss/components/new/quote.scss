@@ -65,14 +65,14 @@
       margin: 0 0 2em;
 
       p.#{atom('txt')} {
-        @include hl;
-        @include hl-h6;
+/*        @include hl;*/
+/*        @include hl-h6;*/
         line-height: 1.8;
         font-style: italic;
         display: block;
 
         @media (min-width: 768px) {
-          @include hl-h4;
+/*          @include hl-h4;*/
           line-height: 2;
         }
 
