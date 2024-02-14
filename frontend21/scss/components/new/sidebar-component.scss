@@ -14,7 +14,7 @@
   }
 
   .nav {
-    @include sidebar-nav;
+/*    @include sidebar-nav;*/
 
     &-list {
       @include sidebar-nav-list;
