@@ -1,0 +1,37 @@
+---
+$title: FAQ
+$titles:
+  navigation: FAQ
+$view: /views/custom.j2
+---
+
+<main class="ap--main ap-t-faq-overview">
+
+<section class="ap--stage ap--container-fluid">
+
+  <div class="ap-o-stage">
+    <div class="ap--container-fluid">
+      <div class="ap-o-stage-content">
+          <h1 class="ap-o-stage-content-headline">FAQ</h1>
+      </div>
+    </div>
+  </div>
+
+  {% include 'views/partials/faq-visual.j2' %}
+</section>
+
+<section class="ap--container">
+
+  <div class="ap--teaser-grid">
+    <div class="ap-o-teaser-grid">
+      <div class="ap-o-teaser-grid-list">
+        {% for teaser_doc in g.collection('/content/amp-dev/runner/faq').list_docs(locale=doc.locale) %}
+        {% include '/views/2021/partials/teaser.j2' %}
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+
+</section>
+
+</main>
