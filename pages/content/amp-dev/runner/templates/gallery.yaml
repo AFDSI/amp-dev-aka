@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'websites/gallery'
 
 document:
-  pages: /content/amp-dev/documentation/templates/gallery/pages
+  pages: /content/amp-dev/runner/templates/gallery/pages
   description: Website for a modern art gallery.
 
 url:
-  path: '/documentation/templates/gallery'
+  path: '/runner/templates/gallery'
 
 stage:
   layout: all

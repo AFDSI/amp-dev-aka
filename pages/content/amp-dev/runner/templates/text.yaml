@@ -17,8 +17,8 @@ teaser:
   template_github_home: 'ads/text'
  
 document:
-  pages: /content/amp-dev/documentation/templates/text/pages
+  pages: /content/amp-dev/runner/templates/text/pages
   description: Simple story with text that fades in.
 
 url:
-  path: '/documentation/templates/text'
+  path: '/runner/templates/text'

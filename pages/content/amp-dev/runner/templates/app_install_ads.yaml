@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'ads/app_install_ads'
 
 document:
-  pages: /content/amp-dev/documentation/templates/app_install_ads/pages
+  pages: /content/amp-dev/runner/templates/app_install_ads/pages
   description: An example ad using AMP 4 Ads markup.
 
 url:
-  path: '/documentation/templates/app_install_ads'
+  path: '/runner/templates/app_install_ads'
 
 stage:
   layout: all

@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'websites/themes_1'
  
 document:
-  pages: /content/amp-dev/documentation/templates/themes_1/pages
+  pages: /content/amp-dev/runner/templates/themes_1/pages
   description: 'Example blog theme, "The Scenic".'
 
 url:
-  path: '/documentation/templates/themes_1'
+  path: '/runner/templates/themes_1'
 
 stage:
   layout: all

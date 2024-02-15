@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'websites/themes_2'
 
 document:
-  pages: /content/amp-dev/documentation/templates/beck_galo/pages
+  pages: /content/amp-dev/runner/templates/beck_galo/pages
   description: Website for a trendy restaurant with modern American cusine.
 
 url:
-  path: '/documentation/templates/beck_galo'
+  path: '/runner/templates/beck_galo'
 
 stage:
   layout: all

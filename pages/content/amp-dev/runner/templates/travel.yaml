@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'websites/travel'
  
 document:
-  pages: /content/amp-dev/documentation/templates/travel/pages
+  pages: /content/amp-dev/runner/templates/travel/pages
   description: A sample travel site with visually attractive filters.
 
 url:
-  path: '/documentation/templates/travel'
+  path: '/runner/templates/travel'
 
 stage:
   layout: all

@@ -17,11 +17,11 @@ teaser:
   template_github_home: 'websites/article'
  
 document:
-  pages: /content/amp-dev/documentation/templates/article/pages
+  pages: /content/amp-dev/runner/templates/article/pages
   description: Simple article template.
 
 url:
-  path: '/documentation/templates/article'
+  path: '/runner/templates/article'
 
 stage:
   layout: all
