@@ -8,7 +8,7 @@ teaser:
     height: 320
     alt: FAQ – AMP Overview
   label: Learn more
-faq: !g.yaml faq.yaml
+faq: !g.yaml /shared/data/faq-sub.yaml
 ---
 
 # AMP Overview
