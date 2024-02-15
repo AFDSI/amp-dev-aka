@@ -1,10 +1,10 @@
 ---
-$title: Template
+$title: Success Stories
 $view: /views/2021/base.html
-$hidden: true
-$path: /runner/template/index.html
+$path: /runner/success-stories/index.html
 $localization:
-  path: /{locale}/runner/template/index.html
+  path: /{locale}/runner/success-stories/index.html
+$hidden: true
 flyout:
   description: Ready to use
   icon: template
@@ -38,7 +38,6 @@ stage:
       type: mobile
       alt: image
 ---
-
 <main class="ap--main ap-t-template">
   <section class="ap--stage ap--container-fluid">
 
@@ -96,7 +95,7 @@ stage:
     {% endif %}
   </section>
 
-  {% set categories = g.categories('/content/amp-dev/runner/template', locale=doc.locale) %}
+  {% set categories = g.categories('/content/amp-dev/runner/success-stories', locale=doc.locale) %}
   <section class="ap--intro ap--container">
     <div class="ap--content">
       <p>{{ _('Get started quickly with a ready-made design. Templates designed to work with all devices - mobile, tablet and desktop.') }}</p>
@@ -123,7 +122,7 @@ stage:
       <div class="ap-o-teaser-grid-list">
         {% for category, stories in categories %}
         {% for teaser_doc in stories %}
-        {% include '/views/2021/partials/new/teaser.j2' %}
+        {% include '/views/2021/partials/teaser.j2' %}
         {% endfor %}
         {% endfor %}
       </div>
