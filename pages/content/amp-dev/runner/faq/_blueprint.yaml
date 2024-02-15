@@ -1,7 +1,0 @@
-$title@: FAQ
-$view: /views/2021/base.html
-# $view: /views/detail/faq-detail.j2
-$path: /runner/faq/{base}.html
-$localization:
-  path: /{locale}/runner/faq/{base}.html
-$order: 1
