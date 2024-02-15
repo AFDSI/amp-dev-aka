@@ -1,5 +1,0 @@
-$title: Success Stories
-$path: /runner/success-stories/{base}.html
-$view: /views/2021/base.html
-$localization:
-  path: /{locale}/runner/success-stories/{base}.html
