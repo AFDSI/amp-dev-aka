@@ -1,6 +1,6 @@
 ---
 $title: FAQ
-$view: /views/2021/partials/new/faq-detail.j2
+$view: /views/detail/faq-detail.j2
 $path: /runner/faq/index.html
 ---
 
@@ -25,7 +25,7 @@ $path: /runner/faq/index.html
     <div class="ap-o-teaser-grid">
       <div class="ap-o-teaser-grid-list">
         {% for teaser_doc in g.collection('/content/amp-dev/runner/faq').list_docs(locale=doc.locale) %}
-        {% include '/views/2021/partials/teaser.j2' %}
+        {% include '/views/partials/teaser.j2' %}
         {% endfor %}
       </div>
     </div>
