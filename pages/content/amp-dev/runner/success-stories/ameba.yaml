@@ -1,5 +1,5 @@
 $title: ameba.jp
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: social-media
 $date: 2019-12-02
 description: Ameba launched their article landing pages as AMP Stories

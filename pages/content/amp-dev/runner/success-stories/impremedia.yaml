@@ -1,5 +1,5 @@
 $title: ImpreMedia
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: publishers
 $date: 2020-03-12
 description: ImpreMedia is a digital publisher that caters to the Hispanic audience in the US.

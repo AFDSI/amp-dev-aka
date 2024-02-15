@@ -1,5 +1,5 @@
 $title: Razorpay
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: finance
 $date: 2021-03-02
 description: 'Razorpay improves survey response rate by 257% by letting customers fill surveys inside the email'

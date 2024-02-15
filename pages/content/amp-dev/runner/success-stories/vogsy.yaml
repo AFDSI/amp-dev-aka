@@ -1,5 +1,5 @@
 $title: VOGSY
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: finance
 $date: 2020-11-03
 description: 'VOGSY Improves Services Firms’ Quote-to-Cash Speed by 80% with AMP-powered dynamic emails'

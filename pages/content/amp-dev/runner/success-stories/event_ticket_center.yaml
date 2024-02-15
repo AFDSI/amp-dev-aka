@@ -1,5 +1,5 @@
 $title: Event Ticket Center
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: e-commerce
 $date: 2017-12-20
 description: AMP helps Event Tickets Center reach their goal of optimizing their conversion rate (ticket sales). The responsive site they used previously was already fast, ...

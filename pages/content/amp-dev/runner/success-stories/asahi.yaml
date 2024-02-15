@@ -1,5 +1,5 @@
 $title: Asahi
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: publishers
 $date: 2019-09-09
 description: Asahi.com uses a paired AMP approach for their free articles across 30% of their domain.

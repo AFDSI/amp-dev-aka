@@ -1,5 +1,5 @@
 $title: Example
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $hidden: true
 description: The team at Wired.com took a measured approach to rolling out AMP. They began by creating AMP pages for all stories published in 2016. After a few months of positive data ...
 

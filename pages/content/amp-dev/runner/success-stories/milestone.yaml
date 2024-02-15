@@ -1,5 +1,5 @@
 $title: Milestone
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: e-commerce
 $date: 2017-03-06
 description: Once Milestone launched Millwood Inn’s new mobile site, the results were astonishing. Mobile transactions jumped more than 83% Conversion rates ...

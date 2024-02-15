@@ -1,5 +1,5 @@
 $title: Slate
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: publishers
 $date: 2016-10-07
 description: The Slate team has been impressed by traffic and engagement metrics on AMP pages since implementation. They have seen a 44% increase in monthly unique visitors ...

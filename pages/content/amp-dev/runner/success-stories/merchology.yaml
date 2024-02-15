@@ -1,5 +1,5 @@
 $title: Merchology
-$view: /views/detail/success-story-detail.j2
+$view: /views/2021/partial/new/success-story-detail.j2
 $category: e-commerce
 $date: 2018-02-02
 description: Merchology ran the experiment in December 2017, and the impact of AMP’s faster load speeds was clear. Ads directing users to AMP pages resulted in a 4.8% lower bounce rate ...
