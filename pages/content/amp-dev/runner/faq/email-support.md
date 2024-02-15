@@ -16,9 +16,9 @@ faq: !g.yaml /shared/data/faq.yaml
 A growing number of email platforms, clients and providers support AMP for Email within their platforms.
 
 {% with sections = doc.faq.email.partners %}
-{% include 'views/partials/accordion.j2' %}
+{% include 'views/2021/partials/new/accordion.j2' %}
 {% endwith %}
 
 {% with sections = [doc.faq.email.clients] %}
-{% include 'views/partials/accordion.j2' %}
+{% include 'views/2021/partials/new/accordion.j2' %}
 {% endwith %}

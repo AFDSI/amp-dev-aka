@@ -16,5 +16,5 @@ faq: !g.yaml /shared/data/faq.yaml
 A growing number of platforms, vendors, and partners support the AMP Project by providing custom components or offering integration with AMP pages within their platforms.
 
 {% with sections = doc.faq.platform_and_vendor_partners %}
-{% include 'views/partials/accordion.j2' %}
+{% include 'views/2021/partials/new/accordion.j2' %}
 {% endwith %}

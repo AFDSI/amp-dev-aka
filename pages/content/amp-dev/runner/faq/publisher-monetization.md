@@ -14,5 +14,5 @@ faq: !g.yaml /shared/data/faq.yaml
 # Publisher Monetization
 
 {% with sections = doc.faq.publisher_monetization %}
-{% include 'views/partials/accordion.j2' %}
+{% include 'views/2021/partials/new/accordion.j2' %}
 {% endwith %}
