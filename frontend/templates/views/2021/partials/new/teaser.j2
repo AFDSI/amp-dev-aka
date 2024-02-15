@@ -97,7 +97,7 @@
     </div>
   </a>
 </div>
-{% elif teaser_doc.view == '/views/examples/documentation.j2' %}
+{% elif teaser_doc.view == '/views/2021/partials/new/documentation.j2' %}
 {# Example teaser #}
 {% set formats = teaser_doc.formats or ['websites'] %}
 [% if ({{ formats|tojson }}).includes(format) %]
