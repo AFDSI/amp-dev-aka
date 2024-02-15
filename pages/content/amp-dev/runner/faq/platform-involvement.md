@@ -10,7 +10,7 @@ teaser:
     height: 320
     alt: FAQ – Platform and Technology Company Involvement
   label: Learn more
-faq: !g.yaml /shared/data/faq.yaml
+faq: !g.yaml faq.yaml
 ---
 
 # Platform and Technology Company Involvement

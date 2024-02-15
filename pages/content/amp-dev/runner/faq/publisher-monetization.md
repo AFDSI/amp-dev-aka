@@ -8,7 +8,7 @@ teaser:
     height: 320
     alt: FAQ – Publisher Monetization
   label: Learn more
-faq: !g.yaml /shared/data/faq.yaml
+faq: !g.yaml faq.yaml
 ---
 
 # Publisher Monetization
