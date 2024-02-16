@@ -10,9 +10,16 @@
 {% endblock %}
 
 {% block main %}
+{% include 'views/partials/sidebar-toggle-observer.j2' %}
   <main class="ap--main ap-t-success-story">
     <section class="ap--stage ap--container-fluid">
       {% do doc.styles.addCssFile('css/components/organisms/stage.css') %}
+
+    {% if doc.stage and doc.stage.layout %}
+      {% set layout = doc.stage.layout %}
+    {% else %}
+      {% set layout = '' %}
+    {% endif %}
 
       <div class="ap-o-stage ap-o-stage-default {{doc.stage.layout}}">
         <div class="ap--container-fluid">
@@ -312,8 +319,9 @@
     {% endif %}
 
   <section class="ap--intro ap--container">
+
     <div class="ap--content">
-      <p>{{ _('Get started quickly with a ready-made design. Templates designed to work with all devices - mobile, tablet and desktop.') }}</p>
+      <p>{{ _('Here we feature interesting and outstanding pages that have been published using AMP. We kindly invite you to look through them to see what AMP is capable of.') }}</p>
     </div>
 
     {% do doc.styles.addCssFile('css/components/organisms/filter-bubbles-list.css') %}
@@ -346,4 +354,5 @@
     </div>
   </section>
   </main>
+{% include 'views/partials/sidebar.j2' %}
 {% endblock %}
