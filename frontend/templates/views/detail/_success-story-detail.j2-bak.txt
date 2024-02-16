@@ -311,39 +311,5 @@
       {% endfor %}
     {% endif %}
 
-  <section class="ap--intro ap--container">
-    <div class="ap--content">
-      <p>{{ _('Get started quickly with a ready-made design. Templates designed to work with all devices - mobile, tablet and desktop.') }}</p>
-    </div>
-
-    {% do doc.styles.addCssFile('css/components/organisms/filter-bubbles-list.css') %}
-    {% do doc.styles.addCssFile('css/components/atoms/pill.css', -100) %}
-    <div class="ap-o-filter-bubbles-list">
-      <button class="ap-a-pill filtered"
-        [class]="activeFilter.chosenFilter == 'none' ? 'ap-a-pill filtered' : 'ap-a-pill'"
-        on="tap:AMP.setState({ activeFilter: {chosenFilter: 'none' } })">
-        {{ _('All') }}
-      </button>
-      {% for category, stories in categories %}
-      <button class="ap-a-pill"
-        [class]="activeFilter.chosenFilter == '{{ category|slug }}' && chosenFilter != 'none' ? 'ap-a-pill filtered' : 'ap-a-pill'"
-        on="tap:AMP.setState({ activeFilter: {chosenFilter: '{{ category|slug }}' } })">
-        {{ _(category) }}
-      </button>
-      {% endfor %}
-    </div>
-  </section>
-
-  <section class="ap--teaser-grid ap--container">
-    <div class="ap-o-teaser-grid">
-      <div class="ap-o-teaser-grid-list">
-        {% for category, stories in categories %}
-        {% for teaser_doc in stories %}
-        {% include '/views/partials/teaser.j2' %}
-        {% endfor %}
-        {% endfor %}
-      </div>
-    </div>
-  </section>
   </main>
 {% endblock %}
