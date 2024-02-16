@@ -1,4 +1,5 @@
 $title: Times of India
+$view: /views/detail/success-story-detail.j2
 $category: publishers
 $date: 2018-11-05
 description: The digital giant soon saw benefits from AMP. AMP's fast-loading web pages and caching layer helped in increasing total served and viewed impressions, thereby considerably increasing ...

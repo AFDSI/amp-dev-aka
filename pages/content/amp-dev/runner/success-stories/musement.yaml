@@ -1,4 +1,5 @@
 $title: Musement
+$view: /views/detail/success-story-detail.j2
 $category: e-commerce
 $date: 2019-12-02
 description: With the addition of AMP pages to the purchase funnel, Musement’s performance continues to improve...

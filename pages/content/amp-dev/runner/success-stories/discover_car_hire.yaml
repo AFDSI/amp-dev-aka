@@ -1,4 +1,5 @@
 $title: DiscoverCarHire.com
+$view: /views/detail/success-story-detail.j2
 $category: e-commerce
 $date: 2018-09-20
 description: After implementing AMP, DiscoverCarHire.com quickly saw results. The load speed on the mobile site’s key landing pages decreased from more than seven seconds to less ...

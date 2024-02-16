@@ -1,4 +1,5 @@
 $title: Findomestic
+$view: /views/detail/success-story-detail.j2
 $category: finance
 $date: 2020-02-24
 description: Findomestic helps users find the banking product they need right from their email.

@@ -1,4 +1,5 @@
 $title: Eski.mobi
+$view: /views/detail/success-story-detail.j2
 $category: e-commerce
 $date: 2018-01-23
 description: "Eski.mobi converted 50 websites to AMP in 2017. With each site, the studio looked for similar outcomes: 'We analyze clickthrough rates (CTR) and conversion rates ..."
