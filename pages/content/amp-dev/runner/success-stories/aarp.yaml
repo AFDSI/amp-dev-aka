@@ -1,5 +1,5 @@
 $title: AARP
-$order: 1
+$view: /views/detail/success-story-detail.j2
 $category: nonprofit
 $date: 2019-10-17
 description: AARP reported that it was able to improve both its performance metrics and user experience with AMP...
