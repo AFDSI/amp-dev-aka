@@ -80,6 +80,32 @@
   }
 }
 
+@mixin ci-code-architecture {
+  background: linear-gradient(
+    225deg,
+    color('japan-laurel') 0%,
+    color('confetti') 75%
+  );
+  color: color('charade');
+
+  svg {
+    fill: currentColor;
+  }
+}
+
+@mixin ci-wrench {
+  background: linear-gradient(
+    225deg,
+    color('robins-egg') 0%,
+    color('blue-ribbon') 75%
+  );
+  color: color('white');
+
+  svg {
+    fill: currentColor;
+  }
+}
+
 @mixin scrollbar {
   &::-webkit-scrollbar {
     width: 6px;
