@@ -1,0 +1,11 @@
+version: "3.7"
+services:
+  amp.dev.prod:
+    restart: always
+    build: 
+      context: .
+      dockerfile: Dockerfile
+      args:
+       AMP_DOC_TOKEN:  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
+    ports:
+      - "8080:80"
