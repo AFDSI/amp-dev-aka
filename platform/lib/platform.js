@@ -46,7 +46,7 @@ const routers = {
   notFound: require('@lib/routers/notFound.js'),
   // packager: require('@lib/routers/packager.js'),
   pixi: require('../../pixi/backend/'),
-  playground: require('../../playground/backend/'),
+  // playground: require('../../playground/backend/'),
   search: require('@lib/routers/search.js'),
   static: require('@lib/routers/static.js'),
   survey: require('@lib/routers/surveyComponent.js'),
@@ -146,9 +146,9 @@ class Platform {
   }
 
   async _configureSubdomains() {
-    this.server.use(
-      await subdomain.map(config.hosts.playground, routers.playground)
-    );
+    // this.server.use(
+    //   await subdomain.map(config.hosts.playground, routers.playground)
+    // );
     this.server.use(await subdomain.map(config.hosts.go, routers.go));
     this.server.use(await subdomain.map(config.hosts.log, routers.log));
     this.server.use(
