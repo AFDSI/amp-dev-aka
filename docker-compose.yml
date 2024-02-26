@@ -6,6 +6,6 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-       AMP_DOC_TOKEN:  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
+       AMP_DOC_TOKEN:  "enter PAT here"
     ports:
       - "8080:80"
