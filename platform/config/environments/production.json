@@ -3,17 +3,17 @@
 	"hosts": {
 		"pages": {
 			"scheme": "https",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"api": {
 			"scheme": "https",
-			"host": "amp-dev-staging.appspot.com",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"platform": {
 			"scheme": "https",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"websocket": {
@@ -36,13 +36,13 @@
 		"go": {
 			"scheme": "https",
 			"subdomain": "go",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"log": {
 			"scheme": "https",
 			"subdomain": "log",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"packager": {
