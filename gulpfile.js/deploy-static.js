@@ -26,11 +26,11 @@ const SITES = [
     ID: 'dff91c68-0a3a-4ccd-a5d5-ada619a2ed40',
     DIR: PAGES_DEST,
   },
-  {
-    NAME: 'playground.challangerdeep.netlify.app',
-    ID: 'acead270-9404-4dde-81e4-aec0e6884869',
-    DIR: `${DIST}/playground`,
-  },
+  // {
+  //   NAME: 'playground.amp.dev',
+  //   ID: 'acead270-9404-4dde-81e4-aec0e6884869',
+  //   DIR: `${DIST}/playground`,
+  // },
   // {
   //   NAME: 'preview.amp.dev',
   //   ID: 'caf28d42-024a-4efb-b266-b00cf10847a3',
