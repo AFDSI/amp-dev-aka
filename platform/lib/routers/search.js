@@ -385,9 +385,9 @@ async function handleTestSearchRequest(request, response, next) {
       components.push({
         title: 'component ' + query + ' ' + i,
         description: 'description component a ' + i,
-        url: 'https://amp.dev',
-        exampleUrl: i == 1 ? 'https://amp.dev/documentation/examples/' : null,
-        playgroundUrl: i == 1 ? 'https://playground.amp.dev' : null,
+        url: 'https://challangerdeep.netlify.app',
+        exampleUrl: i == 1 ? 'https://challangerdeep.netlify.app/documentation/examples/' : null,
+        playgroundUrl: i == 1 ? 'https://playground.challangerdeep.netlify.app' : null,
       });
     }
   }
