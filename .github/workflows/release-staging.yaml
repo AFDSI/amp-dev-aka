@@ -44,7 +44,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 16
 
       - uses: actions/cache@v4
         if: ${{ !env.ACT }}
@@ -74,7 +74,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 16
 
       - uses: actions/cache@v4
         if: ${{ !env.ACT }}
@@ -131,7 +131,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 16
 
       - uses: actions/cache@v4
         if: ${{ !env.ACT }}
@@ -188,7 +188,7 @@ jobs:
       - name: Setting up Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 14
+          node-version: 16
 
       - uses: actions/cache@v4
         if: ${{ !env.ACT }}
