@@ -375,18 +375,18 @@ async function handleTestSearchRequest(request, response, next) {
     pages.push({
       title: 'test ' + query + ' a ' + ((page - 1) * PAGE_SIZE + i),
       description: 'description page a ' + ((page - 1) * PAGE_SIZE + i),
-      url: 'https://ngfalls.netlify.app/',
+      url: 'https://challangerdeep.netlify.app/',
     });
   }
 
-  // prettier will not accept ngfalls.netlify.app for exampleUrl
+  // prettier will not accept https://challangerdeep.netlify.app for exampleUrl
   const components = [];
   if (query.startsWith('amp-') && page == 1) {
     for (let i = 1; i <= 2; i++) {
       components.push({
         title: 'component ' + query + ' ' + i,
         description: 'description component a ' + i,
-        url: 'https://ngfalls.netlify.app',
+        url: 'https://challangerdeep.netlify.app',
         exampleUrl: i == 1 ? 'https://amp.dev/documentation/examples/' : null,
         playgroundUrl: i == 1 ? 'https://playground.amp.dev' : null,
       });
