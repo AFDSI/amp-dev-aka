@@ -22,10 +22,10 @@ function createItem(index, isComponent) {
   const link = isComponent
     ? 'https://challangerdeep.netlify.app/documentation/components/amp-comp-' +
       index +
-     '/'
+      '/'
     : 'https://challangerdeep.netlify.app/documentation/examples/amp-comp-' +
       index +
-     '/';
+      '/';
   return {
     title: 'long-title-' + index,
     link: link,
