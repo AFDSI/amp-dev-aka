@@ -3,22 +3,22 @@
 	"hosts": {
 		"pages": {
 			"scheme": "https",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"api": {
 			"scheme": "https",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"platform": {
 			"scheme": "https",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"websocket": {
 			"scheme": "wss",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"playground": {
@@ -36,13 +36,13 @@
 		"go": {
 			"scheme": "https",
 			"subdomain": "go",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"log": {
 			"scheme": "https",
 			"subdomain": "log",
-			"host": "ngfalls.netlify.app",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"packager": {
