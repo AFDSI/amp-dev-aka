@@ -28,7 +28,7 @@ const MAX_PAGE = 10;
 
 const CSE_BASE_URL = 'https://www.googleapis.com/customsearch/v1';
 const CSE_ID = 'a1a3679a4a68c41f5';
-let API_KEY = 'AIzaSyALcFwrO0arBZU44gmRAln4vk7Ls7bPWJQ';
+let API_KEY = 'undefined';
 
 credentials
   .get('GOOGLE_CSE_API_KEY')
