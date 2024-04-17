@@ -24,13 +24,13 @@
 		"playground": {
 			"scheme": "https",
 			"subdomain": "playground",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"preview": {
 			"scheme": "https",
 			"subdomain": "preview",
-			"host": "amp.dev",
+			"host": "challangerdeep.netlify.app",
 			"port": ""
 		},
 		"go": {
