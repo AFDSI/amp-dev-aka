@@ -77,7 +77,7 @@ function nunjucksEnv() {
   env.addFilter('importBlog', importBlog, true);
 
   env.addFilter('importYouTubeChannel', importYouTubeChannel, true);
-//  env.addFilter('survey', survey, true);
+  // env.addFilter('survey', survey, true);
 
   return env;
 }
