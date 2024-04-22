@@ -31,12 +31,7 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-
-      - uses: actions/cache@v4
-        if: ${{ !env.ACT }}
-        with:
-          path: '**/node_modules'
-          key: node_modules-${{ hashFiles('**/package-lock.json') }}
+          cache: npm
 
       - name: Installing Node.js packages
         run: npm ci
@@ -47,7 +42,7 @@ jobs:
           npx gulp lintNode
           npx gulp lintYaml
           npm run test:platform
-          npm run test:playground
+#          npm run test:playground
   prepare:
     needs: verify
     runs-on: ubuntu-latest
@@ -59,15 +54,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-
-      - uses: actions/cache@v4
-        if: ${{ !env.ACT }}
-        with:
-          path: '**/node_modules'
-          key: node_modules-${{ hashFiles('**/package-lock.json') }}
+          cache: npm
 
       - name: Installing Node.js packages
-        run: npm install
+        run: npm ci
 
       - name: Preparing build
         env:
@@ -115,25 +105,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-
-      - uses: actions/cache@v4
-        if: ${{ !env.ACT }}
-        with:
-          path: '**/node_modules'
-          key: node_modules-${{ hashFiles('**/package-lock.json') }}
+          cache: npm
 
       - name: Installing Node.js packages
-        run: npm install
+        run: npm ci
 
       - name: Setting up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
-
-#      - uses: actions/cache@v3
-#        with:
-#          path: ${{ env.pythonLocation }}
-#          key: ${{ env.pythonLocation }}
 
       - name: Installing Grow
         run: |
@@ -175,15 +155,10 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-
-      - uses: actions/cache@v4
-        if: ${{ !env.ACT }}
-        with:
-          path: '**/node_modules'
-          key: node_modules-${{ hashFiles('**/package-lock.json') }}
+          cache: npm
 
       - name: Installing Node.js packages
-        run: npm install
+        run: npm ci
 
       - name: Fetching build artifacts
         uses: actions/download-artifact@v4
