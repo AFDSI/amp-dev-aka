@@ -31,7 +31,12 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-          cache: npm
+
+      - uses: actions/cache@v4
+        if: ${{ !env.ACT }}
+        with:
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Installing Node.js packages
         run: npm ci
@@ -54,10 +59,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-          cache: npm
+
+      - uses: actions/cache@v4
+        if: ${{ !env.ACT }}
+        with:
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Installing Node.js packages
-        run: npm ci
+        run: npm install
 
       - name: Preparing build
         env:
@@ -105,15 +115,25 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-          cache: npm
+
+      - uses: actions/cache@v4
+        if: ${{ !env.ACT }}
+        with:
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Installing Node.js packages
-        run: npm ci
+        run: npm install
 
       - name: Setting up Python
         uses: actions/setup-python@v5
         with:
           python-version: '3.9'
+
+#      - uses: actions/cache@v3
+#        with:
+#          path: ${{ env.pythonLocation }}
+#          key: ${{ env.pythonLocation }}
 
       - name: Installing Grow
         run: |
@@ -155,10 +175,15 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 16
-          cache: npm
+
+      - uses: actions/cache@v4
+        if: ${{ !env.ACT }}
+        with:
+          path: '**/node_modules'
+          key: node_modules-${{ hashFiles('**/package-lock.json') }}
 
       - name: Installing Node.js packages
-        run: npm ci
+        run: npm install
 
       - name: Fetching build artifacts
         uses: actions/download-artifact@v4
