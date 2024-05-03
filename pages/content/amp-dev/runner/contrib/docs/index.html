@@ -123,7 +123,7 @@ recent_components:
         {% set filter_categories = categories|map(attribute=0)|list|tojson %}
 
         <h2>Filter by category</h2>
-        {% include 'views/partials/category-filter.j2'%}
+        {% include 'views/2021/partials/category-filter.j2'%}
 
         {% for category, docs in categories %}
         {% set scope = namespace(categoryFormats = []) %}
