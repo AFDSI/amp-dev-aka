@@ -151,8 +151,7 @@ recent_components:
                 {% endif %}
               {% set formats = formats|sum(start=[])|unique|list %}
 
-            <!-- <a class="ap-m-table-component-link" href="{{ component.url.path }}" [% if format not in {{ formats|tojson }} and forcedFiltered != true %]hidden[% endif %]> -->
-            <a class="ap-m-table-component-link" href="{{ component.url.path }}" {% if format not in formats and forcedFiltered != true %}style="display:none;"{% endif %}>
+            <a class="ap-m-table-component-link" href="{{ component.url.path }}" [% if format not in {{ formats|tojson }} and forcedFiltered != true %]hidden[% endif %]>
               <div class="ap-m-table-component-row-components">
                 {% if formats %}
                 {% do doc.styles.addCssFile('/css/components/molecules/tag.css') %}
