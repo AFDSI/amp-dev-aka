@@ -126,12 +126,12 @@ recent_components:
         {% include 'views/2021/partials/category-filter.j2'%}
 
         {% for category, docs in categories %}
-        {% set scope = namespace(categoryFormats = []) %}
+          {% set scope = namespace(categoryFormats = []) %}
 
-        {% for doc in docs %}
-          {% set formats = doc.formats or ['websites'] %}
-          {% set scope.categoryFormats = scope.categoryFormats + formats %}
-        {% endfor %}
+          {% for doc in docs %}
+            {% set formats = doc.formats or ['websites'] %}
+            {% set scope.categoryFormats = scope.categoryFormats + formats %}
+          {% endfor %}
 
         {* [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %] *}
         {% if filter_categories|tojson.includes(category) %}
@@ -185,7 +185,7 @@ recent_components:
             {% endfor %}
           </div>
         [% endif %]
-        {% endfor %}
+        {# {% endfor %} #}
       </section>
     </section>
   </div>
