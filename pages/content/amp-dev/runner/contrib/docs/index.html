@@ -133,8 +133,7 @@ recent_components:
             {% set scope.categoryFormats = scope.categoryFormats + formats %}
           {% endfor %}
 
-        {* [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %] *}
-        {% if filter_categories|tojson.includes(category) %}
+        [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %]
 
           {% set category_name = category.split('.')[1] if category and category.split('.')|length == 2 else category %}
           <div id="{{ category }}" class="ap-m-table-component">
@@ -184,7 +183,7 @@ recent_components:
             </a>
             {% endfor %}
           </div>
-        {% endif %}
+        [% endif %]
         {% endfor %}
       </section>
     </section>
