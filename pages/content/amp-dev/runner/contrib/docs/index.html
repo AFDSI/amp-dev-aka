@@ -133,7 +133,9 @@ recent_components:
           {% set scope.categoryFormats = scope.categoryFormats + formats %}
         {% endfor %}
 
-        [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %]
+        {* [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %] *}
+        {% if filter_categories|tojson.includes(category) %}
+
         {% set category_name = category.split('.')[1] if category and category.split('.')|length == 2 else category %}
         <div id="{{ category }}" class="ap-m-table-component">
             {% if category %}
@@ -150,7 +152,8 @@ recent_components:
             {% endif %}
             {% set formats = formats|sum(start=[])|unique|list %}
 
-            <a class="ap-m-table-component-link" href="{{ component.url.path }}" [% if format not in {{ formats|tojson }} and forcedFiltered != true %]hidden[% endif %]>
+            <!-- <a class="ap-m-table-component-link" href="{{ component.url.path }}" [% if format not in {{ formats|tojson }} and forcedFiltered != true %]hidden[% endif %]> -->
+            <a class="ap-m-table-component-link" href="{{ component.url.path }}" {% if format not in formats and forcedFiltered != true %}style="display:none;"{% endif %}>
               <div class="ap-m-table-component-row-components">
                 {% if formats %}
                 {% do doc.styles.addCssFile('/css/components/molecules/tag.css') %}
