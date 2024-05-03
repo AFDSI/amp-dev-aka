@@ -84,7 +84,7 @@ recent_components:
       <hr>
 
       {% do doc.styles.addCssFile('css/components/molecules/teaser-component-code.css') %}
-      <section class="ap--section">
+      <section class="ap-section">
         <h2>Highlighted Components</h2>
         <div class="ap-m-teaser-component">
           <div class="ap-m-teaser-container">
@@ -92,7 +92,7 @@ recent_components:
             {% set teaser_doc = g.doc(teaser_doc, locale=doc.locale) %}
               [% if format in '{{ teaser_doc.formats }}'%]
                 {% with highlightedTeaser = True %}
-                {% include 'views/2021/partials/teaser.j2' %}
+                {% include 'views/partials/teaser.j2' %}
                 {% endwith %}
               [% endif %]
             {% endfor %}
@@ -100,7 +100,7 @@ recent_components:
         </div>
       </section>
       {% if doc.recent_components %}
-      <section class="ap--section">
+      <section class="ap-section">
         <h2>Recent Components</h2>
         <div class="ap-m-teaser-component ap-m-teaser-component-recent">
           <div class="ap-m-teaser-container">
@@ -108,7 +108,7 @@ recent_components:
             {% set teaser_doc = g.doc(teaser_doc, locale=doc.locale) %}
               [% if format in '{{ teaser_doc.formats }}'%]
                 {% with highlightedTeaser = True %}
-                {% include 'views/2021/partials/teaser.j2' %}
+                {% include 'views/partials/teaser.j2' %}
                 {% endwith %}
               [% endif %]
             {% endfor %}
