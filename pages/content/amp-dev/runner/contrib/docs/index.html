@@ -31,9 +31,9 @@ recent_components:
 
 ---
 {# {% do doc.styles.addCssFile('/css/components/templates/component-overview.css') %} #}
-<!-- <main class="ap--main ap-t-component-overview"> -->
-<main class="ap--main">
-  <section class="">
+<main>
+  <div class="ap-container">
+    <section class="ap-content">
 
       <h1>The ABC Component Catalogue</h1>
       <p>The ABC HTML library consists of a basic runtime that brings the core functionalities of ABC to your page. If you want to add additional features you can do so by using one or more of the ready-to-use ABC components. They are classified as:</p>
@@ -92,7 +92,7 @@ recent_components:
             {% set teaser_doc = g.doc(teaser_doc, locale=doc.locale) %}
               [% if format in '{{ teaser_doc.formats }}'%]
                 {% with highlightedTeaser = True %}
-                {% include 'views/partials/teaser.j2' %}
+                {% include 'views/2021/partials/teaser.j2' %}
                 {% endwith %}
               [% endif %]
             {% endfor %}
@@ -108,7 +108,7 @@ recent_components:
             {% set teaser_doc = g.doc(teaser_doc, locale=doc.locale) %}
               [% if format in '{{ teaser_doc.formats }}'%]
                 {% with highlightedTeaser = True %}
-                {% include 'views/partials/teaser.j2' %}
+                {% include 'views/2021/partials/teaser.j2' %}
                 {% endwith %}
               [% endif %]
             {% endfor %}
