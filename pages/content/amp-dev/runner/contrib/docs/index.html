@@ -136,21 +136,21 @@ recent_components:
         {* [% if not {{ filter_categories }}.includes(category) or {{ filter_categories }}.includes(category) and category == '{{ category|slug }}' %] *}
         {% if filter_categories|tojson.includes(category) %}
 
-        {% set category_name = category.split('.')[1] if category and category.split('.')|length == 2 else category %}
-        <div id="{{ category }}" class="ap-m-table-component">
+          {% set category_name = category.split('.')[1] if category and category.split('.')|length == 2 else category %}
+          <div id="{{ category }}" class="ap-m-table-component">
             {% if category %}
-            <h4 id="{{ category }}">{{ _(category_name) }}</h4>
+              <h4 id="{{ category }}">{{ _(category_name) }}</h4>
             {% endif %}
             {% for component in docs if component.is_current %}
-            {# The latest document might not support a format, hence we have to check if any version supports a format #}
-            {% set formats = [component.formats] %}
-            {% if component.versions|count > 1 %}
-            {% for version in component.versions %}
-            {% set versionDoc = g.doc('/content/amp-dev/documentation/components/reference/' + component.title + '-v' + version + '.md') %}
-            {% do formats.append(versionDoc.formats) %}
-            {% endfor %}
-            {% endif %}
-            {% set formats = formats|sum(start=[])|unique|list %}
+              {# The latest document might not support a format, hence we have to check if any version supports a format #}
+              {% set formats = [component.formats] %}
+                {% if component.versions|count > 1 %}
+                  {% for version in component.versions %}
+                  {% set versionDoc = g.doc('/content/amp-dev/documentation/components/reference/' + component.title + '-v' + version + '.md') %}
+                  {% do formats.append(versionDoc.formats) %}
+                  {% endfor %}
+                {% endif %}
+              {% set formats = formats|sum(start=[])|unique|list %}
 
             <!-- <a class="ap-m-table-component-link" href="{{ component.url.path }}" [% if format not in {{ formats|tojson }} and forcedFiltered != true %]hidden[% endif %]> -->
             <a class="ap-m-table-component-link" href="{{ component.url.path }}" {% if format not in formats and forcedFiltered != true %}style="display:none;"{% endif %}>
@@ -184,8 +184,8 @@ recent_components:
             </a>
             {% endfor %}
           </div>
-        [% endif %]
-        {# {% endfor %} #}
+        {% endif %}
+        {% endfor %}
       </section>
     </section>
   </div>
