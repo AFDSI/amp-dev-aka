@@ -308,7 +308,7 @@ function buildPrepare(done) {
         './boilerplate/dist/',
         './playground/dist/',
         './frontend21/dist/',
-        './.cache/',
+    //    './.cache/',
         './examples/static/samples/samples.json',
       ];
 
@@ -798,7 +798,7 @@ exports.collectStatics = collectStatics;
 exports.whoAmI = whoAmI;
 exports.buildPixiFunctions = buildPixiFunctions;
 exports.buildFinalize = gulp.series(
-  gulp.parallel(collectStatics, persistBuildInfo),
+  gulp.parallel(collectStatics),
   thumborImageIndex
 );
 
@@ -806,7 +806,7 @@ exports.build = gulp.series(
   clean,
   buildPrepare,
   buildPages,
-  gulp.parallel(collectStatics, persistBuildInfo)
+  gulp.parallel(collectStatics)
 );
 
 exports.buildForGrowTests = gulp.series(buildBoilerplate, buildPages);
